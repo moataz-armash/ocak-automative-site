@@ -1,20 +1,15 @@
-// src/navigation.ts
-import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
+// // src/navigation.ts
+// import { createNavigation } from "next-intl/navigation";
+// import i18n from "../next-intl.config";
+// export const { Link, useRouter, usePathname } = createNavigation({
+//   locales: i18n.locales,
+//   defaultLocale: i18n.defaultLocale,
+//   // keeps TR at "/" and prefixes others (/en, /ar)
+//   localePrefix: "as-needed",
+// });
 
-export const locales = ["tr", "en", "ar"] as const;
-export const defaultLocale = "tr";
+import { createNavigation } from "next-intl/navigation";
+import { routing } from "./i18n/routing";
 
-export const pathnames = {
-  "/": "/",
-  "/hakkimizde": { en: "/about", ar: "/about" },
-  "/urunler": { en: "/products", ar: "/products" },
-  "/iletisim": { en: "/contact", ar: "/contact" },
-} as const;
-
-export const { Link, useRouter, usePathname, useSearchParams } =
-  createLocalizedPathnamesNavigation({
-    locales,
-    defaultLocale,
-    localePrefix: "as-needed",
-    pathnames,
-  });
+export const { Link, redirect, usePathname, useRouter, getPathname } =
+  createNavigation(routing);

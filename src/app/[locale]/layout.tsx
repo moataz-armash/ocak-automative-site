@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/locales";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
   title: "Şirket Adı – Kurumsal",
@@ -27,7 +28,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!locales.includes(locale as any)) notFound();
+  if (!hasLocale(routing.locales, locale)) notFound();
   // const messages = await getMessages();
   const messages = (await import(`@/messages/${locale}.json`)).default;
 

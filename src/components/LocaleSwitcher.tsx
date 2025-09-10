@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { locales } from "@/i18n/locales";
 import Link from "next/link";
+import { routing } from "@/i18n/routing";
 
 export default function LocaleSwitcher() {
   const pathname = usePathname();
@@ -13,9 +13,10 @@ export default function LocaleSwitcher() {
       <ul
         tabIndex={0}
         className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32">
-        {locales.map((l) => {
+        {routing.locales.map((l) => {
           const parts = pathname?.split("/") ?? [];
-          if (parts[1] && locales.includes(parts[1] as any)) parts[1] = l;
+          if (parts[1] && routing.locales.includes(parts[1] as any))
+            parts[1] = l;
           else parts.unshift("", l);
           const href = parts.join("/") || "/" + l;
           return (
