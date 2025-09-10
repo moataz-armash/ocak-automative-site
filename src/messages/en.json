@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "cta": {
+    "contact": "Get a Quote"
+  },
+  "hero": {
+    "title": "Your trusted partner",
+    "subtitle": "Quality, speed and reliability."
+  }
+}

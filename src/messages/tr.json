@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "contact": "İletişim"
+  },
+  "cta": {
+    "contact": "Teklif Al"
+  },
+  "hero": {
+    "title": "Güvenilir ortağınız",
+    "subtitle": "Kalite, hız ve güvenilirlik."
+  }
+}
