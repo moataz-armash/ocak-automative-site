@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   experimental: {
     typedRoutes: true,
   },
+  images: {
+    domains: ["img.daisyui.com"],
+  },
 };
 
 export default withNextIntl(nextConfig);
