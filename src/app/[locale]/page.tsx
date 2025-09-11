@@ -3,7 +3,7 @@ import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   return (
-    <div className="container mx-auto p-6 space-y-12">
+    <div className="container mx-auto px-4">
       <Hero />
       <section className="grid md:grid-cols-3 gap-6">
         {Array.from({ length: 3 }).map((_, i) => (

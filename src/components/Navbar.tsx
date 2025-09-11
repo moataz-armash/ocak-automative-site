@@ -15,7 +15,7 @@ const menuItems = [
 export default function Navbar() {
   const t = useTranslations("nav");
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm px-12 lg:px-16">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

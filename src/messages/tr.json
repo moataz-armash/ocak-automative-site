@@ -5,11 +5,27 @@
     "products": "Ürünler",
     "contact": "İletişim"
   },
-  "cta": {
-    "contact": "Teklif Al"
-  },
+
   "hero": {
     "title": "Güvenilir ortağınız",
-    "subtitle": "Kalite, hız ve güvenilirlik."
+    "subtitle": "Kalite, hız ve güvenilirlik.",
+    "cta": {
+      "label": "Teklif Al",
+      "href": "/iletisim"
+    },
+    "images": {
+      "car": "Araba",
+      "fuel": "Benzin ve Mazot",
+      "doorsAndTrunk": "Kapı ve Bagaj",
+      "foamSeals": "Süngerli Fitiller"
+    },
+    "carousel": {
+      "slide1Alt": "Usta tezgâhında çalışan otomotiv teknisyeni",
+      "slide2Alt": "Benzin ve mazot hortumları yakın plan",
+      "slide3Alt": "Kapı ve bagaj fitili uygulaması",
+      "slide4Alt": "Süngerli fitiller ürün fotoğrafı",
+      "prev": "Önceki Slayt",
+      "next": "Sonraki Slayt"
+    }
   }
 }

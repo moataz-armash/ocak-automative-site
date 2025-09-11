@@ -5,11 +5,27 @@
     "products": "Products",
     "contact": "Contact"
   },
-  "cta": {
-    "contact": "Get a Quote"
-  },
+
   "hero": {
     "title": "Your trusted partner",
-    "subtitle": "Quality, speed and reliability."
+    "subtitle": "Quality, speed and reliability.",
+    "cta": {
+      "label": "Get a Quote",
+      "href": "/contact"
+    },
+    "images": {
+      "car": "Car",
+      "fuel": "Petrol and Diesel",
+      "doorsAndTrunk": "Doors and Trunk",
+      "foamSeals": "Foam Seals"
+    },
+    "carousel": {
+      "slide1Alt": "Automotive technician working at a professional workbench",
+      "slide2Alt": "Close-up of petrol and diesel hoses",
+      "slide3Alt": "Door and trunk seal application",
+      "slide4Alt": "Foam seals product photo",
+      "prev": "Previous Slide",
+      "next": "Next Slide"
+    }
   }
 }

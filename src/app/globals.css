@@ -9,6 +9,22 @@ html {
   themes: light --default, dark --prefersdark, cupcake;
 }
 
+@theme {
+  --color-primary-btn: red;
+  --color-primary-btn-hover: #e63946;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  --color-primary-btn: red;
+  --color-primary-btn-hover: #e63946;
+}
+@plugin "daisyui/theme" {
+  name: "dark";
+  --color-primary-btn: blue;
+  --color-primary-btn-hover: #1c96e1;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
