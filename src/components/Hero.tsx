@@ -50,7 +50,7 @@ export default function Hero() {
 
           {/* Media column (right on desktop) */}
           {mounted && (
-            <div className="min-w-0 order-1 lg:order-2 lg:col-span-2">
+            <motion.div className="min-w-0 order-1 lg:order-2 lg:col-span-2">
               <Swiper
                 effect="fade"
                 slidesPerView={1}
@@ -80,7 +80,7 @@ export default function Hero() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </div>
+            </motion.div>
           )}
         </div>
       </div>

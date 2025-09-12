@@ -39,7 +39,9 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             {menuItems.map((item) => (
               <li key={item.title}>
-                <Link href={item.path}>{t(`${item.title}`)}</Link>
+                <Link href={item.path} className="hover:text-primary-btn">
+                  {t(`${item.title}`)}
+                </Link>
               </li>
             ))}
           </ul>
@@ -59,7 +61,9 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">
           {menuItems.map((item) => (
             <li key={item.title}>
-              <Link href={item.path}>{t(`${item.title}`)}</Link>
+              <Link href={item.path} className="hover:text-primary-btn">
+                {t(`${item.title}`)}
+              </Link>
             </li>
           ))}
         </ul>

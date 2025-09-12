@@ -27,5 +27,36 @@
       "prev": "Önceki Slayt",
       "next": "Sonraki Slayt"
     }
+  },
+
+  "products": {
+    "list": [
+      {
+        "id": "door-trunk-seals",
+        "title": "Kapı Ve Bagaj Fitilleri",
+        "description": "Otomobil kapı fitilleri kapının kapanması sırasında sesi kestiği gibi hava , su ,toz vb.içeri girmesini engeller.",
+        "alt": "Kapı ve bagaj fitili resmi"
+      },
+      {
+        "id": "foam-strips",
+        "title": "Süngerli Fitiller",
+        "description": "Süngerli fitiller genelde conta ve sızdırmazlık vazifesi görürler.",
+        "alt": "Süngerli fitil resmi"
+      },
+      {
+        "id": "tire-hoses",
+        "title": "Lastik Şişirme Hortumları",
+        "description": "Tır , kamyon , traktör vb araçlarda kompresöre takılarak lastik havalarını ayarlamakta kullanılır.",
+        "alt": "Lastik şişirme hortumu resmi"
+      },
+      {
+        "id": "fuel-hoses",
+        "title": "Benzin, Mazot ve Akaryakıt Hortumları",
+        "description": "Araçlarda akaryakıt iletimi amacıyla kullanılırlar.",
+        "alt": "Akaryakıt hortumu resmi"
+      }
+    ],
+    "detail": "detay",
+    "ourProducts": "Ürünlerimiz"
   }
 }

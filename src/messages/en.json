@@ -27,5 +27,35 @@
       "prev": "Previous Slide",
       "next": "Next Slide"
     }
+  },
+  "products": {
+    "list": [
+      {
+        "id": "door-trunk-seals",
+        "title": "Door and Trunk Seals",
+        "description": "Car door seals prevent noise when closing the door and stop air, water, dust, etc. from entering.",
+        "alt": "Car door and trunk seal"
+      },
+      {
+        "id": "foam-strips",
+        "title": "Foam Sealing Strips",
+        "description": "Foam strips are generally used as gaskets and for sealing purposes.",
+        "alt": "Foam sealing strip"
+      },
+      {
+        "id": "tire-hoses",
+        "title": "Tire Inflation Hoses",
+        "description": "Used on trucks, lorries, tractors, etc. by connecting to a compressor to adjust tire air pressure.",
+        "alt": "Tire inflation hose"
+      },
+      {
+        "id": "fuel-hoses",
+        "title": "Fuel Hoses (Gasoline, Diesel)",
+        "description": "Used for fuel transmission in vehicles.",
+        "alt": "Fuel transfer hose"
+      }
+    ],
+    "detail": "details",
+    "ourProducts": "Our Products"
   }
 }

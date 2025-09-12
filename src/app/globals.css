@@ -11,13 +11,15 @@ html {
 
 @theme {
   --color-primary-btn: red;
-  --color-primary-btn-hover: #e63946;
+  --color-primary-btn-hover: #cb0404;
+  --color-secondary-bg: #f3f2ec;
 }
 
 @plugin "daisyui/theme" {
   name: "light";
   --color-primary-btn: red;
-  --color-primary-btn-hover: #e63946;
+  --color-primary-btn-hover: #e62727;
+  --color-secondary-bg: #f3f2ec;
 }
 @plugin "daisyui/theme" {
   name: "dark";
