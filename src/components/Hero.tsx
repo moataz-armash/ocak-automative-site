@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/motion";
 import Image from "next/image";
@@ -8,104 +8,80 @@ import benzinMazot from "@/public/images/ocak_otomotiv_benzin_mazot_hortumu.jpg"
 import kapiVeBagaj from "@/public/images/ocak_otomotiv_kapi_ve_bagaj_fitili.jpg";
 import sungerliFitiller from "@/public/images/ocak_otomotiv_sungerli_fitiller.jpg";
 import { useTranslations } from "use-intl";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 const images = [araba, benzinMazot, kapiVeBagaj, sungerliFitiller];
 
 export default function Hero() {
   const t = useTranslations("hero");
-  const carouselRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
-
-    const id = setInterval(() => {
-      carousel.scrollLeft += carousel.offsetWidth;
-      if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
-        carousel.scrollLeft = 0;
-      }
-    }, 4000);
-
-    // Pause on hover/focus (nicer UX; doesn’t hurt SEO)
-    const pause = () => clearInterval(id);
-    carousel.addEventListener("mouseenter", pause);
-    carousel.addEventListener("focusin", pause);
-
-    return () => {
-      clearInterval(id);
-      carousel.removeEventListener("mouseenter", pause);
-      carousel.removeEventListener("focusin", pause);
-    };
-  }, []);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   return (
     <motion.section
       initial="hidden"
       animate="show"
       variants={fadeUp}
-      className="hero min-h-[50vh] bg-base-200 rounded-2xl">
-      <div className="hero bg-base-200 py-16 px-8 md:px-4">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div
-            className="carousel w-full rounded-lg shadow-lg overflow-hidden"
-            ref={carouselRef}>
-            {images.map((img, index) => (
-              <div className="carousel-item relative w-full" key={index}>
-                <Image
-                  src={img}
-                  alt={t(`carousel.slide${index + 1}Alt`, {
-                    number: index + 1,
-                  })}
-                  // Static import provides width/height to prevent CLS.
-                  // Help the browser pick the right size:
-                  sizes="(max-width: 1024px) 100vw, 1024px"
-                  // LCP optimization for the first (visible) slide only:
-                  priority={index === 0}
-                  fetchPriority={index === 0 ? "high" : "auto"}
-                  // Nice UX; no SEO impact
-                  placeholder="blur"
-                  className="w-full h-auto object-cover"
-                />
-
-                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                  {/* Keep anchors if you rely on DaisyUI hash nav; add labels for a11y */}
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const el = carouselRef.current;
-                      if (el) el.scrollLeft -= el.offsetWidth;
-                    }}
-                    className="btn btn-circle"
-                    aria-label={t("carousel.prev")}>
-                    ❮
-                  </a>
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const el = carouselRef.current;
-                      if (el) el.scrollLeft += el.offsetWidth;
-                    }}
-                    className="btn btn-circle"
-                    aria-label={t("carousel.next")}>
-                    ❯
-                  </a>
-                </div>
-              </div>
-            ))}
+      className="bg-base-200">
+      <div className="mx-auto max-w-7xl px-4 py-16">
+        {/* Stretch rows to same height */}
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 lg:gap-12">
+          {/* Text column (left on desktop) */}
+          <div className="space-y-6 order-2 lg:order-1 lg:col-span-1">
+            <h1 className="text-4xl font-bold sm:text-5xl text-center md:text-left md:rtl:text-right">
+              {t("title")}
+            </h1>
+            <p className="text-base sm:text-lg text-center md:text-left md:rtl:text-right">
+              {t("subtitle")}
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <a
+                className="btn bg-primary-btn text-white rounded-xl hover:bg-primary-btn-hover"
+                href={t("cta.href")}>
+                {t("cta.label")}
+              </a>
+            </div>
           </div>
 
-          <div>
-            {/* Use a real, keyword-rich H1 for SEO */}
-            <h1 className="text-5xl font-bold">{t("title")}</h1>
-            <p className="py-6">{t("subtitle")}</p>
-            <a
-              className="btn bg-primary-btn text-white rounded-md border-0 hover:bg-primary-btn-hover"
-              href={t("cta.href")}>
-              {t("cta.label")}
-            </a>
-          </div>
+          {/* Media column (right on desktop) */}
+          {mounted && (
+            <div className="min-w-0 order-1 lg:order-2 lg:col-span-2">
+              <Swiper
+                effect="fade"
+                slidesPerView={1}
+                loop
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={{ clickable: true }}
+                navigation
+                speed={600}
+                modules={[Autoplay, Navigation, Pagination, EffectFade]}
+                className="mySwiper rounded-lg shadow-lg w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]" /* <-- real height */
+              >
+                {images.map((img, index) => (
+                  <SwiperSlide key={index}>
+                    {/* The slide fills the given height; image fills the slide */}
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={img}
+                        alt={`Slide ${index + 1}`}
+                        fill
+                        className="object-cover rounded-lg" /* cover = full width & height */
+                        sizes="(min-width: 1024px) 50vw, 100vw" /* matches 2-col (right side) */
+                        priority={index === 0}
+                        fetchPriority={index === 0 ? "high" : "auto"}
+                        placeholder="blur"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          )}
         </div>
       </div>
     </motion.section>
