@@ -58,5 +58,24 @@
     ],
     "detail": "detay",
     "ourProducts": "Ürünlerimiz"
+  },
+  "footer": {
+    "company": "Ocak Otomotiv San. Ve Tic. Ltd.Şti.",
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "about": {
+    "heading": "Hakkımızda",
+    "title": "Başarı Hikayemiz",
+    "description": "Firmamız, 1969 yılında Ziya Ocak tarafından “otomotiv sektöründe hizmette öncü olmak” ilkesiyle kurulmuştur. Yıllar içinde kapı, cam, bagaj lastikleri, depo kuşak lastikleri, sünger profiller ve şerit contaların imalatıyla hem yurt içi hem de yurt dışında güven kazanmıştır. 2000 yılından itibaren PVC hortum ve PVC profil üretimine başlayan firmamız, otomotiv, inşaat, ambalaj ve ayakkabı gibi birçok sektöre hizmet vererek ürün çeşitliliğini her geçen gün artırmaktadır. Ayrıca, özel tip sünger, şerit conta, PVC hortum, PVC profiller ile EPDM hortum ve profillerini numune ya da teknik resime göre üretme kapasitesine sahiptir.",
+    "cards": {
+      "experienceTitle": "1969’dan Günümüze",
+      "experienceDesc": "50+ Yıllık Deneyim ve Güven",
+      "productsTitle": "Geniş Ürün Yelpazesi",
+      "productsDesc": "Kapı, cam, bagaj lastikleri, PVC & EPDM profiller",
+      "globalTitle": "Yurtiçi ve Yurtdışı Başarı",
+      "globalDesc": "Hem Türkiye’de hem global pazarlarda güven",
+      "sectorsTitle": "Çeşitli Sektörlere Hizmet",
+      "sectorsDesc": "Otomotiv, inşaat, ambalaj, ayakkabı ve daha fazlası"
+    }
   }
 }

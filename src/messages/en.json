@@ -57,5 +57,24 @@
     ],
     "detail": "details",
     "ourProducts": "Our Products"
+  },
+  "footer": {
+    "company": "Ocak Automotive Industry and Trade Ltd.",
+    "copyright": "All rights reserved."
+  },
+  "about": {
+    "heading": "About Us",
+    "title": "Our Achievement Story",
+    "description": "Our company was founded in 1969 by Ziya Ocak with the principle of being a pioneer in the automotive industry. Over the years, we have gained trust both in Turkey and abroad by manufacturing door, window, trunk seals, fuel tank belts, foam profiles, and strip gaskets. Since 2000, we have expanded into PVC hoses and PVC profile production, serving industries such as automotive, construction, packaging, and footwear, while continuously increasing our product variety. We also have the capacity to produce special sponge types, strip gaskets, PVC hoses, PVC profiles, as well as EPDM hoses and profiles according to samples or technical drawings.",
+    "cards": {
+      "experienceTitle": "Since 1969",
+      "experienceDesc": "50+ Years of Experience & Trust",
+      "productsTitle": "Wide Product Range",
+      "productsDesc": "Door, window, trunk seals, PVC & EPDM profiles",
+      "globalTitle": "Domestic & International Success",
+      "globalDesc": "Trusted in Turkey and global markets",
+      "sectorsTitle": "Serving Multiple Industries",
+      "sectorsDesc": "Automotive, construction, packaging, footwear and more"
+    }
   }
 }

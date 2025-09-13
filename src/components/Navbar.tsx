@@ -46,7 +46,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="text-xl">
           <Image
             src={logo}
             alt="ocak automative logo"
