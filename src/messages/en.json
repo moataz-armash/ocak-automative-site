@@ -3,7 +3,18 @@
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "contact": "Contact"
+    "contact": "Contact",
+    "productsChildren": {
+      "metal-profiles": "Metal Reinforced Profiles",
+      "glass-seals": "Glass Rubber and Seals",
+      "foam-profiles": "Foam Profiles",
+      "hoses": "Hose Types",
+      "door-trunk-seals": "Door and Trunk Seals",
+      "pvc-tank-belts": "PVC Profiles & Tank Belts",
+      "truck-trailer": "Truck & Trailer Materials",
+      "pneumatic-fittings": "Pneumatic Fittings",
+      "other": "Other Products"
+    }
   },
 
   "hero": {
@@ -76,5 +87,8 @@
       "sectorsTitle": "Serving Multiple Industries",
       "sectorsDesc": "Automotive, construction, packaging, footwear and more"
     }
+  },
+  "productsPage": {
+    "heading": "Products"
   }
 }

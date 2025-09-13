@@ -3,7 +3,18 @@
     "home": "الصفحة الرئيسية",
     "about": "معلومات عنا",
     "products": "المنتجات",
-    "contact": "اتصل"
+    "contact": "اتصل",
+    "productsChildren": {
+      "metal-profiles": "البروفيلات المعدنية المعززة",
+      "glass-seals": "جوانات ومطاط الزجاج",
+      "foam-profiles": "البروفيلات الإسفنجية",
+      "hoses": "أنواع الخراطيم",
+      "door-trunk-seals": "جوانات الأبواب والشنطة",
+      "pvc-tank-belts": "بروفيلات PVC وأحزمة الخزان",
+      "truck-trailer": "مستلزمات الشاحنات والمقطورات",
+      "pneumatic-fittings": "وصلات هوائية",
+      "other": "منتجات أخرى"
+    }
   },
   "cta": {
     "contact": "احصل على عرض"
@@ -79,5 +90,8 @@
       "sectorsTitle": "خدمة لقطاعات متعددة",
       "sectorsDesc": "السيارات، البناء، التغليف، الأحذية والمزيد"
     }
+  },
+  "productsPage": {
+    "heading": "المنتجات"
   }
 }

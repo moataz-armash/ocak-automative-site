@@ -3,7 +3,18 @@
     "home": "Anasayfa",
     "about": "Hakkımızda",
     "products": "Ürünler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "productsChildren": {
+      "metal-profiles": "Metal Takviyeli Profiller",
+      "glass-seals": "Cam Lastik ve Fitilleri",
+      "foam-profiles": "Süngerli Profiller",
+      "hoses": "Hortum Çeşitleri",
+      "door-trunk-seals": "Kapı ve Bagaj Fitilleri",
+      "pvc-tank-belts": "PVC Profiller ve Depo Kuşak Lastikleri",
+      "truck-trailer": "Tır ve Dorse Malzemeleri",
+      "pneumatic-fittings": "Pnömatik Rakorlar",
+      "other": "Diğer Ürünler"
+    }
   },
 
   "hero": {
@@ -77,5 +88,8 @@
       "sectorsTitle": "Çeşitli Sektörlere Hizmet",
       "sectorsDesc": "Otomotiv, inşaat, ambalaj, ayakkabı ve daha fazlası"
     }
+  },
+  "productsPage": {
+    "heading": "Ürünler"
   }
 }
