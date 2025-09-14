@@ -89,6 +89,49 @@
     }
   },
   "productsPage": {
-    "heading": "Products"
+    "heading": "Products",
+    "list": [
+      {
+        "id": "metal-profiles",
+        "title": "Metal Reinforced Profiles",
+        "alt": "Image of metal reinforced profiles"
+      },
+      {
+        "id": "glass-seals",
+        "title": "Glass Rubber and Seals",
+        "alt": "Image of glass rubber and seals"
+      },
+      {
+        "id": "foam-profiles",
+        "title": "Foam Profiles",
+        "alt": "Image of foam profiles"
+      },
+      { "id": "hoses", "title": "Hose Types", "alt": "Image of hose types" },
+      {
+        "id": "door-trunk-seals",
+        "title": "Door and Trunk Seals",
+        "alt": "Image of door and trunk seals"
+      },
+      {
+        "id": "pvc-tank-belts",
+        "title": "PVC Profiles and Tank Belts",
+        "alt": "Image of PVC profiles and tank belts"
+      },
+      {
+        "id": "truck-trailer",
+        "title": "Truck and Trailer Materials",
+        "alt": "Image of truck and trailer materials"
+      },
+      {
+        "id": "pneumatic-fittings",
+        "title": "Pneumatic Fittings",
+        "alt": "Image of pneumatic fittings"
+      },
+      {
+        "id": "other",
+        "title": "Other Products",
+        "alt": "Image of other products"
+      }
+    ]
   }
 }

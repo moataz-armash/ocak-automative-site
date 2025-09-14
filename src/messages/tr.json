@@ -90,6 +90,53 @@
     }
   },
   "productsPage": {
-    "heading": "Ürünler"
+    "heading": "Ürünler",
+    "list": [
+      {
+        "id": "metal-profiles",
+        "title": "Metal Takviyeli Profiller",
+        "alt": "Metal takviyeli profiller resmi"
+      },
+      {
+        "id": "glass-seals",
+        "title": "Cam Lastik ve Fitilleri",
+        "alt": "Cam lastik ve fitilleri resmi"
+      },
+      {
+        "id": "foam-profiles",
+        "title": "Süngerli Profiller",
+        "alt": "Süngerli profiller resmi"
+      },
+      {
+        "id": "hoses",
+        "title": "Hortum Çeşitleri",
+        "alt": "Hortum çeşitleri resmi"
+      },
+      {
+        "id": "door-trunk-seals",
+        "title": "Kapı ve Bagaj Fitilleri",
+        "alt": "Kapı ve bagaj fitilleri resmi"
+      },
+      {
+        "id": "pvc-tank-belts",
+        "title": "PVC Profiller ve Depo Kuşak Lastikleri",
+        "alt": "PVC profiller ve depo kuşak lastikleri resmi"
+      },
+      {
+        "id": "truck-trailer",
+        "title": "Tır ve Dorse Malzemeleri",
+        "alt": "Tır ve dorse malzemeleri resmi"
+      },
+      {
+        "id": "pneumatic-fittings",
+        "title": "Pnömatik Rakorlar",
+        "alt": "Pnömatik rakorlar resmi"
+      },
+      {
+        "id": "other",
+        "title": "Diğer Ürünler",
+        "alt": "Diğer ürünler resmi"
+      }
+    ]
   }
 }

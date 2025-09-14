@@ -1,26 +1,21 @@
 "use client";
 import Header from "@/components/Header";
-// import { useTranslations } from "next-intl";
+import ProductGrid from "@/components/ProductGrid";
+import { useTranslations } from "next-intl";
+
+export type ProductMsg = {
+  id: string;
+  title: string;
+  alt: string;
+};
 
 export default function Products() {
-  // const t = useTranslations("productsPage");
-  const items = Array.from({ length: 9 }).map((_, i) => ({
-    id: i,
-    name: `Ürün ${i + 1}`,
-  }));
+  const t = useTranslations("productsPage");
+  const products = t.raw("list") as ProductMsg[];
   return (
-    <div className="container mx-auto">
-      <Header translation="productsPage" title="heading" />
-      <div className="p-6 grid md:grid-cols-3 gap-6">
-        {items.map((i) => (
-          <div key={i.id} className="card bg-base-100 shadow">
-            <div className="card-body">
-              <h3 className="card-title">{i.name}</h3>
-              <p>Kısa açıklama</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="p-6">
+      <Header title="heading" translation="productsPage" />
+      <ProductGrid products={products} />;
     </div>
   );
 }
