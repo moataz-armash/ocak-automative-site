@@ -10,8 +10,29 @@ import img6 from "@/public/images/urun5_2.png";
 import img7 from "@/public/images/urun_4.jpg";
 import img8 from "@/public/images/urun_5.jpg";
 import img9 from "@/public/images/other.png";
+import { CATALOG, CATEGORY_SLUGS } from "@/app/lib/catalog";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { use } from "react";
 
-export type ProductMsg = {
+export const dynamicParams = false;
+
+type Props = { params: Promise<{ locale: string; urunSlug: string }> };
+
+export function generateStaticParams() {
+  return CATEGORY_SLUGS.map((slug) => ({ urunSlug: slug }));
+}
+
+export async function generateMetaData({ params }: Props) {
+  const { urunSlug } = await params;
+  const cat = CATALOG[urunSlug];
+  if (!cat) return {};
+  return {
+    title: `${cat.title} | Ürünler`,
+    description: `${cat.title} kategorisindeki ürünler.`,
+  };
+}
+type ProductMsg = {
   id: string;
   title: string;
   alt: string;
@@ -29,34 +50,48 @@ const ProductImages: Record<string, StaticImageData> = {
   other: img9,
 };
 
-export default function Page() {
-  const t = useTranslations("productsPage");
-  const products = t.raw("list") as ProductMsg[];
-  return (
-    <section className="mx-auto max-w-7xl px-4 py-12">
-      <h2 className="text-2xl font-bold mb-8">Our Products</h2>
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-        {products.map((p) => (
-          <div
-            key={p.id}
-            className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 hover:scale-105 bg-white">
-            {/* Image */}
-            <div className="relative aspect-square w-full">
-              <Image
-                src={ProductImages[p.id]}
-                alt={p.alt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
+export default function CategoryPage({ params }: Props) {
+  const { urunSlug } = use(params);
+  const category = CATALOG[urunSlug];
+  if (!category) return notFound();
 
-            {/* Info */}
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{p.title}</h3>
-            </div>
-          </div>
+  return (
+    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      {/* Breadcrumb */}
+      <nav className="mb-4 text-sm text-gray-600">
+        <Link href="/urunler" className="hover:underline">
+          Ürünler
+        </Link>
+        <span className="mx-2">/</span>
+        <span className="text-gray-900">{category.title}</span>
+      </nav>
+
+      <h1 className="text-3xl font-bold mb-6">{category.title}</h1>
+
+      {/* Products grid */}
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {category.products.map((p) => (
+          <li
+            key={p.id}
+            className="transform transition-transform duration-500 hover:scale-105">
+            <Link
+              href={`/urunler/${category.slug}/${p.id}`} // detail page route
+              className="block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={p.image}
+                  alt={p.alt}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white font-semibold">{p.title}</h3>
+                </div>
+              </div>
+            </Link>
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </main>
   );
 }

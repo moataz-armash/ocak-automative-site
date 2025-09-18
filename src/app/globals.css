@@ -16,6 +16,8 @@ html {
   --color-third-bg: #1e93ab;
 }
 
+/* https://colorhunt.co/palette/e62727f3f2ecdcdcdc1e93ab */
+
 @plugin "daisyui/theme" {
   name: "light";
   --color-primary-btn: red;

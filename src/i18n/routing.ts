@@ -26,7 +26,7 @@ export const routing = defineRouting({
     "/urunler/metal-profiles": {
       en: "/products/metal-profiles",
       ar: "/منتجات/مقاطع-مدعمة-بالمعدن",
-      tr: "urunler/metal-takviyeli-profiller",
+      tr: "/urunler/metal-takviyeli-profiller",
     },
     "/urunler/glass-seals": {
       en: "/products/glass-seals",
