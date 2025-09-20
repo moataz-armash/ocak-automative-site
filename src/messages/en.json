@@ -133,5 +133,99 @@
         "alt": "Image of other products"
       }
     ]
+  },
+  "categories": {
+    "heading": "Products",
+    "list": {
+      "metal-profiles": {
+        "title": "Metal Reinforced Profiles",
+        "products": [
+          {
+            "id": "sheet-pass-door-seal",
+            "title": "Sheet Pass Door Seal",
+            "alt": "Close-up of a sheet pass door seal"
+          },
+          {
+            "id": "sheet-trunk-seal",
+            "title": "Sheet Trunk Seal",
+            "alt": "Black rubber sheet trunk seal"
+          },
+          {
+            "id": "mercedes-lada-door-seal",
+            "title": "Mercedes-Lada Door Seal",
+            "alt": "Door seal for Mercedes and Lada vehicles"
+          },
+          {
+            "id": "solid-door-seal",
+            "title": "Solid Door Seal",
+            "alt": "Solid type black rubber door seal"
+          },
+          {
+            "id": "m23-automatic-door-seal",
+            "title": "M23 Automatic Door Seal",
+            "alt": "M23 model automatic door seal"
+          },
+          {
+            "id": "panel-door-seal-type",
+            "title": "Panel Seal Door Type",
+            "alt": "Panel type rubber door seal"
+          },
+          {
+            "id": "panel-trunk-seal-type",
+            "title": "Panel Seal Trunk Type",
+            "alt": "Panel type rubber trunk seal"
+          },
+          {
+            "id": "small-sheet-profile",
+            "title": "Small Sheet Profile",
+            "alt": "Small black sheet profile rubber"
+          },
+          {
+            "id": "wide-sheet-profile",
+            "title": "Wide Sheet Profile",
+            "alt": "Wide sheet profile rubber with textile reinforcement"
+          },
+          {
+            "id": "doblo-door-rubber",
+            "title": "Doblo Type Door Rubber",
+            "alt": "Doblo type automotive door rubber seal"
+          },
+          {
+            "id": "tractor-door-seal",
+            "title": "Tractor Door Seal",
+            "alt": "Black rubber tractor door seal"
+          },
+          {
+            "id": "sheet-profile-varieties",
+            "title": "Sheet Profile Varieties",
+            "alt": "Different types of sheet rubber profiles"
+          },
+          {
+            "id": "medium-door-seal",
+            "title": "Medium Size Door Seal",
+            "alt": "Medium-sized black rubber door seal"
+          },
+          {
+            "id": "solid-trunk-seal",
+            "title": "Solid Trunk Seal",
+            "alt": "Solid type rubber trunk seal"
+          }
+        ]
+      },
+      "glass-seals": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ],
+      "foam-profiles": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ]
+    }
   }
 }

@@ -136,5 +136,99 @@
       },
       { "id": "other", "title": "منتجات أخرى", "alt": "صورة لمنتجات أخرى" }
     ]
+  },
+  "categories": {
+    "heading": "المنتجات",
+    "list": {
+      "metal-profiles": {
+        "title": "المقاطع المعدنية المقواة",
+        "products": [
+          {
+            "id": "sheet-pass-door-seal",
+            "title": "ختم باب مرور الصفيحة",
+            "alt": "لقطة مقربة لختم باب مرور الصفيحة"
+          },
+          {
+            "id": "sheet-trunk-seal",
+            "title": "ختم صندوق الصفيحة",
+            "alt": "ختم صندوق الصفيحة المطاطي الأسود"
+          },
+          {
+            "id": "mercedes-lada-door-seal",
+            "title": "ختم باب مرسيدس-لادا",
+            "alt": "ختم الباب لسيارات مرسيدس ولادا"
+          },
+          {
+            "id": "solid-door-seal",
+            "title": "ختم الباب الصلب",
+            "alt": "ختم باب مطاطي أسود من النوع الصلب"
+          },
+          {
+            "id": "m23-automatic-door-seal",
+            "title": "ختم الباب الأوتوماتيكي M23",
+            "alt": "ختم الباب الأوتوماتيكي طراز M23"
+          },
+          {
+            "id": "panel-door-seal-type",
+            "title": "نوع ختم باب اللوحة",
+            "alt": "ختم باب مطاطي من نوع اللوحة"
+          },
+          {
+            "id": "panel-trunk-seal-type",
+            "title": "نوع ختم صندوق اللوحة",
+            "alt": "ختم صندوق مطاطي من نوع اللوحة"
+          },
+          {
+            "id": "small-sheet-profile",
+            "title": "ملف الصفيحة الصغير",
+            "alt": "مطاط ملف الصفيحة الصغير الأسود"
+          },
+          {
+            "id": "wide-sheet-profile",
+            "title": "ملف الصفيحة العريض",
+            "alt": "مطاط ملف الصفيحة العريض بتعزيز نسيجي"
+          },
+          {
+            "id": "doblo-door-rubber",
+            "title": "مطاط باب نوع دوبلو",
+            "alt": "ختم مطاط باب السيارة من نوع دوبلو"
+          },
+          {
+            "id": "tractor-door-seal",
+            "title": "ختم باب الجرار",
+            "alt": "ختم باب الجرار المطاطي الأسود"
+          },
+          {
+            "id": "sheet-profile-varieties",
+            "title": "أنواع ملف الصفيحة",
+            "alt": "أنواع مختلفة من ملفات الصفيحة المطاطية"
+          },
+          {
+            "id": "medium-door-seal",
+            "title": "ختم الباب متوسط الحجم",
+            "alt": "ختم باب مطاطي أسود متوسط الحجم"
+          },
+          {
+            "id": "solid-trunk-seal",
+            "title": "ختم الصندوق الصلب",
+            "alt": "ختم صندوق مطاطي من النوع الصلب"
+          }
+        ]
+      },
+      "glass-seals": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ],
+      "foam-profiles": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ]
+    }
   }
 }

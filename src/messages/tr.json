@@ -138,5 +138,99 @@
         "alt": "Diğer ürünler resmi"
       }
     ]
+  },
+  "categories": {
+    "heading": "Ürünler",
+    "list": {
+      "metal-profiles": {
+        "title": "Metal Takviyeli Profiller",
+        "products": [
+          {
+            "id": "sheet-pass-door-seal",
+            "title": "Sac Geçiş Kapı Contası",
+            "alt": "Sac geçiş kapı contasının yakın çekimi"
+          },
+          {
+            "id": "sheet-trunk-seal",
+            "title": "Sac Bagaj Contası",
+            "alt": "Siyah kauçuk sac bagaj contası"
+          },
+          {
+            "id": "mercedes-lada-door-seal",
+            "title": "Mercedes-Lada Kapı Contası",
+            "alt": "Mercedes ve Lada araçları için kapı contası"
+          },
+          {
+            "id": "solid-door-seal",
+            "title": "Masif Kapı Contası",
+            "alt": "Masif tipte siyah kauçuk kapı contası"
+          },
+          {
+            "id": "m23-automatic-door-seal",
+            "title": "M23 Otomatik Kapı Contası",
+            "alt": "M23 model otomatik kapı contası"
+          },
+          {
+            "id": "panel-door-seal-type",
+            "title": "Panel Kapı Conta Tipi",
+            "alt": "Panel tipinde kauçuk kapı contası"
+          },
+          {
+            "id": "panel-trunk-seal-type",
+            "title": "Panel Bagaj Conta Tipi",
+            "alt": "Panel tipinde kauçuk bagaj contası"
+          },
+          {
+            "id": "small-sheet-profile",
+            "title": "Küçük Sac Profil",
+            "alt": "Küçük siyah sac profil kauçuğu"
+          },
+          {
+            "id": "wide-sheet-profile",
+            "title": "Geniş Sac Profil",
+            "alt": "Tekstil takviyeli geniş sac profil kauçuğu"
+          },
+          {
+            "id": "doblo-door-rubber",
+            "title": "Doblo Tip Kapı Lastiği",
+            "alt": "Doblo tipinde otomotiv kapı kauçuk contası"
+          },
+          {
+            "id": "tractor-door-seal",
+            "title": "Traktör Kapı Contası",
+            "alt": "Siyah kauçuk traktör kapı contası"
+          },
+          {
+            "id": "sheet-profile-varieties",
+            "title": "Sac Profil Çeşitleri",
+            "alt": "Farklı tipte sac kauçuk profilleri"
+          },
+          {
+            "id": "medium-door-seal",
+            "title": "Orta Boy Kapı Contası",
+            "alt": "Orta boyda siyah kauçuk kapı contası"
+          },
+          {
+            "id": "solid-trunk-seal",
+            "title": "Masif Bagaj Contası",
+            "alt": "Masif tipte kauçuk bagaj contası"
+          }
+        ]
+      },
+      "glass-seals": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ],
+      "foam-profiles": [
+        {
+          "id": "cam-lastik-çeşitleri",
+          "title": "Cam Lastik Çeşitleri",
+          "alt": "Cam Lastik Çeşitleri resmi"
+        }
+      ]
+    }
   }
 }
