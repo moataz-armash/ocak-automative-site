@@ -212,20 +212,416 @@
           }
         ]
       },
-      "glass-seals": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ],
-      "foam-profiles": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ]
+      "glass-seals": {
+        "title": "Glass Rubber & Seal Varieties",
+        "products": [
+          {
+            "id": "glass-rubber-varieties",
+            "title": "Glass Rubber Varieties",
+            "alt": "Various types of glass rubber seals"
+          },
+          {
+            "id": "velvet-glass-seals",
+            "title": "Velvet Glass Seals",
+            "alt": "Velvet-textured glass seal varieties"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "Triangular Glass Seal Flange",
+            "alt": "Triangular-shaped glass seal flange profile"
+          },
+          {
+            "id": "nickel-free-u-glass-seal",
+            "title": "Nickel-Free U Glass Seal",
+            "alt": "Nickel-free U-type glass seal profile"
+          },
+          {
+            "id": "quad-channel-glass-rubber",
+            "title": "Quad Channel Glass Rubber",
+            "alt": "Four-channel glass rubber profile"
+          },
+          {
+            "id": "black-glass-seal",
+            "title": "Black Glass Seal",
+            "alt": "Black colored glass seal profile"
+          },
+          {
+            "id": "flanged-fixed-glass-rubber",
+            "title": "Flanged Fixed Glass Rubber",
+            "alt": "Flange-detailed fixed glass rubber profile"
+          },
+          {
+            "id": "adhesive-glass-rubber",
+            "title": "Adhesive Glass Rubber",
+            "alt": "Adhesive-featured glass rubber profile"
+          },
+          {
+            "id": "velvet-glass-seal-type-1",
+            "title": "Velvet Glass Seal Type 1",
+            "alt": "First type velvet surface glass seal"
+          },
+          {
+            "id": "velvet-glass-seal-type-2",
+            "title": "Velvet Glass Seal Type 2",
+            "alt": "Second type velvet glass seal profile"
+          },
+          {
+            "id": "velvet-glass-edge-seal",
+            "title": "Velvet Glass Edge Seal",
+            "alt": "Velvet glass seal for edge mounting"
+          },
+          {
+            "id": "epdm-u-seals",
+            "title": "EPDM U Seals",
+            "alt": "EPDM material U-type seal profiles"
+          },
+          {
+            "id": "glossy-glass-seal-flange",
+            "title": "Glossy Glass Seal Flange",
+            "alt": "Glossy surface glass seal flange"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "Round Flange Varieties",
+            "alt": "Various colored round flange profiles"
+          },
+          {
+            "id": "velvet-glass-seal-type-3",
+            "title": "Velvet Glass Seal Type 3",
+            "alt": "Third type velvet glass seal profile"
+          }
+        ]
+      },
+      "foam-profiles": {
+        "title": "Sponge Profiles-EPDM and Natural Rubber",
+        "products": [
+          {
+            "id": "solid-rubber-sponge-1",
+            "title": "Natural Rubber Sponge",
+            "alt": "Natural rubber sponge profile"
+          },
+          {
+            "id": "solid-rubber-sponge-2",
+            "title": "Natural Rubber Sponge",
+            "alt": "Second type natural rubber sponge profile"
+          },
+          {
+            "id": "medium-split-seal",
+            "title": "Center Split Seal",
+            "alt": "Center split seal profile"
+          },
+          {
+            "id": "epdm-sponge-1",
+            "title": "EPDM Sponge",
+            "alt": "EPDM sponge profile"
+          },
+          {
+            "id": "epdm-sponge-2",
+            "title": "EPDM Sponge",
+            "alt": "Second type EPDM sponge profile"
+          },
+          {
+            "id": "epdm-sponge-3",
+            "title": "EPDM Sponge",
+            "alt": "Third type EPDM sponge profile"
+          },
+          {
+            "id": "epdm-sponge-4",
+            "title": "EPDM Sponge",
+            "alt": "Fourth type EPDM sponge profile"
+          },
+          {
+            "id": "epdm-sponge-tube-seal",
+            "title": "EPDM Sponge Tube Seals",
+            "alt": "EPDM sponge tube seal profile"
+          }
+        ]
+      },
+      "hoses": {
+        "title": "Hoses & Tube Varieties",
+        "products": [
+          {
+            "id": "rubber-inflation-hose-1",
+            "title": "Tire Inflation Hose",
+            "alt": "Braided tire inflation hose"
+          },
+          {
+            "id": "rubber-inflation-hose-2",
+            "title": "Tire Inflation Hose",
+            "alt": "Black tire inflation hose"
+          },
+          {
+            "id": "rubber-inflation-hose-3",
+            "title": "Tire Inflation Hose",
+            "alt": "White braided tire inflation hose"
+          },
+          {
+            "id": "b-type-similar-hose",
+            "title": "B-Type Fuel Hose",
+            "alt": "B-type gasoline hose"
+          },
+          {
+            "id": "e-type-fuel-hose",
+            "title": "E-Type Fuel Hose",
+            "alt": "E-type fuel hose"
+          },
+          {
+            "id": "air-oxygen-hose",
+            "title": "Air & Oxygen Hose",
+            "alt": "Colored air and oxygen hose"
+          },
+          {
+            "id": "thin-transparent-hoses",
+            "title": "Thin Transparent Hoses",
+            "alt": "Thin transparent plastic hoses"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "Oval Transparent Hose",
+            "alt": "Oval cross-section transparent hose"
+          },
+          {
+            "id": "reinforced-transparent-hoses",
+            "title": "Heavy-Duty Transparent Hoses",
+            "alt": "Thick transparent hoses"
+          },
+          {
+            "id": "polyurethane-hose",
+            "title": "Polyurethane Hose",
+            "alt": "Blue polyurethane hose"
+          },
+          {
+            "id": "braided-transparent-hoses",
+            "title": "Braided Transparent Hoses",
+            "alt": "Braided transparent hoses"
+          },
+          {
+            "id": "3-2mm-e-type-hose",
+            "title": "3.2mm E-Type Hose",
+            "alt": "3.2mm diameter E-type green hose"
+          },
+          {
+            "id": "air-hose-pvc",
+            "title": "PVC Air Hose",
+            "alt": "Black PVC air hose"
+          },
+          {
+            "id": "wire-braided-transparent-hoses",
+            "title": "Wire Braided Hoses",
+            "alt": "Wire braided transparent hoses"
+          },
+          {
+            "id": "macaroni-hoses",
+            "title": "Macaroni Hoses",
+            "alt": "Macaroni type black hoses"
+          }
+        ]
+      },
+      "door-trunk-seals": {
+        "title": "Complete Door Seal Kits",
+        "products": [
+          {
+            "id": "megan-door-seal-kit",
+            "title": "Megan Type Complete Door Seal Kit",
+            "alt": "Megan type complete door seal set"
+          },
+          {
+            "id": "opel-corsa-door-seal-kit",
+            "title": "Opel Corsa Type Complete Door Seal Kit",
+            "alt": "Opel Corsa type complete door seal set"
+          },
+          {
+            "id": "dacia-door-seal-kit",
+            "title": "Dacia Type Complete Door Seal Kit",
+            "alt": "Dacia type complete door seal set"
+          },
+          {
+            "id": "laguna-door-seal-kit",
+            "title": "Laguna Type Complete Door Seal Kit",
+            "alt": "Laguna type complete door seal set"
+          },
+          {
+            "id": "fiat-linea-door-seal-kit",
+            "title": "Fiat Linea Type Complete Door Seal Kit",
+            "alt": "Fiat Linea type complete door seal set"
+          },
+          {
+            "id": "fiat-albea-door-seal-kit",
+            "title": "Fiat Albea Type Complete Door Seal Kit",
+            "alt": "Fiat Albea type complete door seal set"
+          },
+          {
+            "id": "opel-vectra-door-seal-kit",
+            "title": "Opel Vectra Type Complete Door Seal Kit",
+            "alt": "Opel Vectra type complete door seal set"
+          },
+          {
+            "id": "volkswagen-caddy-door-seal-kit",
+            "title": "Volkswagen Caddy Type Complete Door Seal Kit",
+            "alt": "Volkswagen Caddy type complete door seal set"
+          },
+          {
+            "id": "ford-connect-door-seal-kit",
+            "title": "Ford Connect Type Complete Door Seal Kit",
+            "alt": "Ford Connect type complete door seal set"
+          },
+          {
+            "id": "renault-kangoo-door-seal-kit",
+            "title": "Renault Kangoo Type Complete Door Seal Kit",
+            "alt": "Renault Kangoo type complete door seal set"
+          },
+          {
+            "id": "ford-transit-door-seal-kit",
+            "title": "Ford Transit Type Complete Door Seal Kit",
+            "alt": "Ford Transit type complete door seal set"
+          },
+          {
+            "id": "ford-cargo-door-seal-kit",
+            "title": "Ford Cargo Type Complete Door Seal Kit",
+            "alt": "Ford Cargo type complete door seal set"
+          }
+        ]
+      },
+      "pvc-tank-belts": {
+        "title": "PVC Profiles & Tank Belt Rubbers",
+        "products": [
+          {
+            "id": "tank-belt-seal",
+            "title": "Tank Belt Seal",
+            "alt": "Tank belt seal profile"
+          },
+          {
+            "id": "ym-mudguard-seal",
+            "title": "Y.M. Mudguard Seal",
+            "alt": "Y.M. mudguard seal profile"
+          },
+          {
+            "id": "mudguard-seal",
+            "title": "Mudguard Seal",
+            "alt": "Mudguard seal profile"
+          },
+          {
+            "id": "special-mudguard-seal",
+            "title": "Special Mudguard Seal",
+            "alt": "Special mudguard seal profile"
+          },
+          {
+            "id": "special-pvc-profiles",
+            "title": "Special PVC Profiles",
+            "alt": "Special PVC profile varieties"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "Triangular Glass Seal Flange",
+            "alt": "Triangular glass seal flange profile"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "Round Flange Varieties",
+            "alt": "Round flange varieties"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "Oval Transparent Hose",
+            "alt": "Oval transparent hose profile"
+          },
+          {
+            "id": "butterfly-seal",
+            "title": "Butterfly Seal",
+            "alt": "Butterfly seal profile"
+          },
+          {
+            "id": "fire-door-seal",
+            "title": "Fire Door Seal",
+            "alt": "Fire door seal profile"
+          },
+          {
+            "id": "joinery-interior-door-seal",
+            "title": "Joinery & Interior Door Seal",
+            "alt": "Joinery and interior door seal profile"
+          }
+        ]
+      },
+      "truck-trailer-materials": {
+        "title": "Truck & Trailer Materials",
+        "products": [
+          {
+            "id": "truck-trailer-hose",
+            "title": "Truck Trailer Hose",
+            "alt": "Truck trailer hose system"
+          },
+          {
+            "id": "cabin-cleaning-hose",
+            "title": "Cabin Cleaning Hose",
+            "alt": "Cabin cleaning hose"
+          },
+          {
+            "id": "mudguard-back-rubber",
+            "title": "Mudguard Tension Rubber",
+            "alt": "Mudguard tension rubber system"
+          },
+          {
+            "id": "truck-back-rubber",
+            "title": "Truck Tension Rubber",
+            "alt": "Truck tension rubber system"
+          },
+          {
+            "id": "trailer-support-bracket",
+            "title": "Trailer Support Bracket",
+            "alt": "Trailer support bracket"
+          },
+          {
+            "id": "metal-tank-cap",
+            "title": "Metal Tank Cap",
+            "alt": "Metal tank cap"
+          },
+          {
+            "id": "customs-seal",
+            "title": "Customs Seal",
+            "alt": "Customs seal system"
+          },
+          {
+            "id": "led-marker-lamp",
+            "title": "LED Marker Lamp",
+            "alt": "LED marker lamp"
+          },
+          {
+            "id": "plastic-tank-cap",
+            "title": "Plastic Tank Cap",
+            "alt": "Plastic tank cap"
+          },
+          {
+            "id": "blue-led-marker-lamp",
+            "title": "Six LED Marker Lamp",
+            "alt": "Six LED blue marker lamp"
+          },
+          {
+            "id": "led-strip-light",
+            "title": "LED Strip Light",
+            "alt": "Meter LED strip light"
+          },
+          {
+            "id": "led-emblems",
+            "title": "LED Emblem Varieties",
+            "alt": "LED emblem varieties"
+          },
+          {
+            "id": "trailer-support-bracket-set",
+            "title": "Trailer Support Bracket",
+            "alt": "Trailer support bracket set"
+          },
+          {
+            "id": "tire-rubber",
+            "title": "Battery Rubber",
+            "alt": "Battery rubber system"
+          },
+          {
+            "id": "trailer-middle-cover-seal",
+            "title": "Trailer Middle Cover Seal",
+            "alt": "Trailer middle cover seal system"
+          }
+        ]
+      }
     }
   }
 }

@@ -19,7 +19,10 @@ const menuItems = [
       { title: "hoses", path: "/urunler/hoses" },
       { title: "door-trunk-seals", path: "/urunler/door-trunk-seals" },
       { title: "pvc-tank-belts", path: "/urunler/pvc-tank-belts" },
-      { title: "truck-trailer", path: "/urunler/truck-trailer" },
+      {
+        title: "truck-trailer-materials",
+        path: "/urunler/truck-trailer-materials",
+      },
       { title: "pneumatic-fittings", path: "/urunler/pneumatic-fittings" },
       { title: "other", path: "/urunler/other" },
     ],

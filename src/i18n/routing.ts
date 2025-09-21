@@ -53,8 +53,8 @@ export const routing = defineRouting({
       ar: "/منتجات/أحزمة-الخزان-و-PVC",
       tr: "/urunler/pvc-profiller-ve-depo-kusak-lastikleri",
     },
-    "/urunler/truck-trailer": {
-      en: "/products/truck-trailer",
+    "/urunler/truck-trailer-materials": {
+      en: "/products/truck-trailer-materials",
       ar: "/منتجات/مواد-الشاحنات-والمقطورات",
       tr: "/urunler/tir-ve-dorse-malzemeleri",
     },

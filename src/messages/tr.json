@@ -217,20 +217,416 @@
           }
         ]
       },
-      "glass-seals": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ],
-      "foam-profiles": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ]
+      "glass-seals": {
+        "title": "Cam Lastik ve Fitil Çeşitleri",
+        "products": [
+          {
+            "id": "glass-rubber-varieties",
+            "title": "Cam Lastik Çeşitleri",
+            "alt": "Çeşitli cam lastik tipleri"
+          },
+          {
+            "id": "velvet-glass-seals",
+            "title": "Kadifeli Cam Fitilleri",
+            "alt": "Kadifeli yüzeyli cam fitil çeşitleri"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "Üçgen Cam Fitil Sekmanı",
+            "alt": "Üçgen şekilli cam fitil sekman profili"
+          },
+          {
+            "id": "nickel-free-u-glass-seal",
+            "title": "Nikelsiz U Cam Fitili",
+            "alt": "Nikelsiz U tipi cam fitil profili"
+          },
+          {
+            "id": "quad-channel-glass-rubber",
+            "title": "Dörtlük Cam Lastiği",
+            "alt": "Dörtlü kanal cam lastik profili"
+          },
+          {
+            "id": "black-glass-seal",
+            "title": "Siyah Cam Contası",
+            "alt": "Siyah renkli cam conta profili"
+          },
+          {
+            "id": "flanged-fixed-glass-rubber",
+            "title": "Sekmanlı Sabit Cam Lastiği",
+            "alt": "Sekman detaylı sabit cam lastik profili"
+          },
+          {
+            "id": "adhesive-glass-rubber",
+            "title": "Yapıştırma Cam Lastiği",
+            "alt": "Yapıştırma özellikli cam lastik profili"
+          },
+          {
+            "id": "velvet-glass-seal-type-1",
+            "title": "Kadifeli Cam Fitili",
+            "alt": "Kadifeli yüzey detaylı cam fitil"
+          },
+          {
+            "id": "velvet-glass-seal-type-2",
+            "title": "Kadifeli Cam Fitili Tip 2",
+            "alt": "İkinci tip kadifeli cam fitil profili"
+          },
+          {
+            "id": "velvet-glass-edge-seal",
+            "title": "Kadifeli Cam Kenar Fitili",
+            "alt": "Kenar montajı için kadifeli cam fitili"
+          },
+          {
+            "id": "epdm-u-seals",
+            "title": "EPDM U Fitiller",
+            "alt": "EPDM malzemeli U tipi fitil profilleri"
+          },
+          {
+            "id": "glossy-glass-seal-flange",
+            "title": "Parlak Cam Fitil Sekmanı",
+            "alt": "Parlak yüzey detaylı cam fitil sekmanı"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "Yuvarlak Sekman Çeşitleri",
+            "alt": "Çeşitli renklerde yuvarlak sekman profilleri"
+          },
+          {
+            "id": "velvet-glass-seal-type-3",
+            "title": "Kadifeli Cam Fitili Tip 3",
+            "alt": "Üçüncü tip kadifeli cam fitil profili"
+          }
+        ]
+      },
+      "foam-profiles": {
+        "title": "Süngerli Profiller-EPDM ve Tabii kauçuk",
+        "products": [
+          {
+            "id": "solid-rubber-sponge-1",
+            "title": "Tabii Kauçuk Sünger",
+            "alt": "Tabii kauçuk sünger profil"
+          },
+          {
+            "id": "solid-rubber-sponge-2",
+            "title": "Tabii Kauçuk Sünger",
+            "alt": "İkinci tip tabii kauçuk sünger profili"
+          },
+          {
+            "id": "medium-split-seal",
+            "title": "Ortası Yarık Fitil",
+            "alt": "Ortası yarık fitil profili"
+          },
+          {
+            "id": "epdm-sponge-1",
+            "title": "EPDM Sünger",
+            "alt": "EPDM sünger profil"
+          },
+          {
+            "id": "epdm-sponge-2",
+            "title": "EPDM Sünger",
+            "alt": "İkinci tip EPDM sünger profili"
+          },
+          {
+            "id": "epdm-sponge-3",
+            "title": "EPDM Sünger",
+            "alt": "Üçüncü tip EPDM sünger profili"
+          },
+          {
+            "id": "epdm-sponge-4",
+            "title": "EPDM Sünger",
+            "alt": "Dördüncü tip EPDM sünger profili"
+          },
+          {
+            "id": "epdm-sponge-tube-seal",
+            "title": "EPDM Sünger Boru Fitilleri",
+            "alt": "EPDM sünger boru fitil profili"
+          }
+        ]
+      },
+      "hoses": {
+        "title": "Hortum ve Boru Çeşitleri",
+        "products": [
+          {
+            "id": "rubber-inflation-hose-1",
+            "title": "Lastik Şişirme Hortumu",
+            "alt": "Örgülü lastik şişirme hortumu"
+          },
+          {
+            "id": "rubber-inflation-hose-2",
+            "title": "Lastik Şişirme Hortumu",
+            "alt": "Siyah lastik şişirme hortumu"
+          },
+          {
+            "id": "rubber-inflation-hose-3",
+            "title": "Lastik Şişirme Hortumu",
+            "alt": "Beyaz örgülü lastik şişirme hortumu"
+          },
+          {
+            "id": "b-type-similar-hose",
+            "title": "B Tipi Benzin Hortumu",
+            "alt": "B tipi benzin hortumu"
+          },
+          {
+            "id": "e-type-fuel-hose",
+            "title": "E Tipi Akaryakıt Hortumu",
+            "alt": "E tipi akaryakıt hortumu"
+          },
+          {
+            "id": "air-oxygen-hose",
+            "title": "Hava Ve Oksijen Hortumu",
+            "alt": "Renkli hava ve oksijen hortumu"
+          },
+          {
+            "id": "thin-transparent-hoses",
+            "title": "İnce Şeffaf Hortumlar",
+            "alt": "İnce şeffaf plastik hortumlar"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "Oval Şeffaf Hortum",
+            "alt": "Oval kesitli şeffaf hortum"
+          },
+          {
+            "id": "reinforced-transparent-hoses",
+            "title": "Etli Şeffaf Hortumlar",
+            "alt": "Kalın şeffaf hortumlar"
+          },
+          {
+            "id": "polyurethane-hose",
+            "title": "Poliüretan Hortum",
+            "alt": "Mavi poliüretan hortum"
+          },
+          {
+            "id": "braided-transparent-hoses",
+            "title": "Örgülü Şeffaf Hortumlar",
+            "alt": "Örgülü şeffaf hortumlar"
+          },
+          {
+            "id": "3-2mm-e-type-hose",
+            "title": "3.2 mm E Tipi Hortum",
+            "alt": "3.2 mm çapında E tipi yeşil hortum"
+          },
+          {
+            "id": "air-hose-pvc",
+            "title": "Hava Hortumu PVC",
+            "alt": "PVC hava hortumu siyah"
+          },
+          {
+            "id": "wire-braided-transparent-hoses",
+            "title": "Tel Örgülü Hortumlar",
+            "alt": "Tel örgülü şeffaf hortumlar"
+          },
+          {
+            "id": "macaroni-hoses",
+            "title": "Makaron Hortumlar",
+            "alt": "Makaron tipi siyah hortumlar"
+          }
+        ]
+      },
+      "door-trunk-seals": {
+        "title": "Kapı Fitili Komple Setleri",
+        "products": [
+          {
+            "id": "megan-door-seal-kit",
+            "title": "Megan Type Kapı Fitili Komple",
+            "alt": "Megan tipi kapı fitili komple set"
+          },
+          {
+            "id": "opel-corsa-door-seal-kit",
+            "title": "Opel Corsa Type Kapı Fitili Komple",
+            "alt": "Opel Corsa tipi kapı fitili komple set"
+          },
+          {
+            "id": "dacia-door-seal-kit",
+            "title": "Dacia Type Kapı Fitili Komple",
+            "alt": "Dacia tipi kapı fitili komple set"
+          },
+          {
+            "id": "laguna-door-seal-kit",
+            "title": "Laguna Type Kapı Fitili Komple",
+            "alt": "Laguna tipi kapı fitili komple set"
+          },
+          {
+            "id": "fiat-linea-door-seal-kit",
+            "title": "Fiat Linea Type Kapı Fitili Komple",
+            "alt": "Fiat Linea tipi kapı fitili komple set"
+          },
+          {
+            "id": "fiat-albea-door-seal-kit",
+            "title": "Fiat Albea Type Kapı Fitili Komple",
+            "alt": "Fiat Albea tipi kapı fitili komple set"
+          },
+          {
+            "id": "opel-vectra-door-seal-kit",
+            "title": "Opel Vectra Type Kapı Fitili Komple",
+            "alt": "Opel Vectra tipi kapı fitili komple set"
+          },
+          {
+            "id": "volkswagen-caddy-door-seal-kit",
+            "title": "Volkswagen Caddy Type Kapı Fitili Komple",
+            "alt": "Volkswagen Caddy tipi kapı fitili komple set"
+          },
+          {
+            "id": "ford-connect-door-seal-kit",
+            "title": "Ford Connect Type Kapı Fitili Komple",
+            "alt": "Ford Connect tipi kapı fitili komple set"
+          },
+          {
+            "id": "renault-kangoo-door-seal-kit",
+            "title": "Reno Kango Type Kapı Fitili Komple",
+            "alt": "Renault Kangoo tipi kapı fitili komple set"
+          },
+          {
+            "id": "ford-transit-door-seal-kit",
+            "title": "Ford Transit Type Kapı Fitili Komple",
+            "alt": "Ford Transit tipi kapı fitili komple set"
+          },
+          {
+            "id": "ford-cargo-door-seal-kit",
+            "title": "Ford Kargo Type Kapı Fitili Komple",
+            "alt": "Ford Cargo tipi kapı fitili komple set"
+          }
+        ]
+      },
+      "pvc-tank-belts": {
+        "title": "PVC Profiller Ve Depo Kuşak Lastikleri",
+        "products": [
+          {
+            "id": "tank-belt-seal",
+            "title": "Depo Kuşak Fitili",
+            "alt": "Depo kuşak fitil profili"
+          },
+          {
+            "id": "ym-mudguard-seal",
+            "title": "Y.M.Çamurluk Fitili",
+            "alt": "Y.M. çamurluk fitil profili"
+          },
+          {
+            "id": "mudguard-seal",
+            "title": "Çamurluk Fitili",
+            "alt": "Çamurluk fitil profili"
+          },
+          {
+            "id": "special-mudguard-seal",
+            "title": "Özel Çamurluk Fitili",
+            "alt": "Özel çamurluk fitil profili"
+          },
+          {
+            "id": "special-pvc-profiles",
+            "title": "Özel PVC Profiller",
+            "alt": "Özel PVC profil çeşitleri"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "Üçgen Cam Fitil Sekmanı",
+            "alt": "Üçgen cam fitil sekman profili"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "Yuvarlak Sekman Çeşitleri",
+            "alt": "Yuvarlak sekman çeşitleri"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "Oval Şeffaf Hortum",
+            "alt": "Oval şeffaf hortum profili"
+          },
+          {
+            "id": "butterfly-seal",
+            "title": "Kelebçe Fitili",
+            "alt": "Kelebçe fitil profili"
+          },
+          {
+            "id": "fire-door-seal",
+            "title": "Yangın Kapısı Fitili",
+            "alt": "Yangın kapısı fitil profili"
+          },
+          {
+            "id": "joinery-interior-door-seal",
+            "title": "Doğrama Ve İç Kapı Fitili",
+            "alt": "Doğrama ve iç kapı fitil profili"
+          }
+        ]
+      },
+      "truck-trailer-materials": {
+        "title": "Tır ve Dorse Malzemeleri",
+        "products": [
+          {
+            "id": "truck-trailer-hose",
+            "title": "Tır Dorse Hortumu",
+            "alt": "Tır dorse hortum sistemi"
+          },
+          {
+            "id": "cabin-cleaning-hose",
+            "title": "Kabin Temizleme Hortumu",
+            "alt": "Kabin temizleme hortumu"
+          },
+          {
+            "id": "mudguard-back-rubber",
+            "title": "Çamurluk Gergi Lastiği",
+            "alt": "Çamurluk gergi lastik sistemi"
+          },
+          {
+            "id": "truck-back-rubber",
+            "title": "Tır Gergi Lastiği",
+            "alt": "Tır gergi lastik sistemi"
+          },
+          {
+            "id": "trailer-support-bracket",
+            "title": "Dorse Dayanma Takozu",
+            "alt": "Dorse dayanma takozu"
+          },
+          {
+            "id": "metal-tank-cap",
+            "title": "Metal Depo Kapağı",
+            "alt": "Metal depo kapağı"
+          },
+          {
+            "id": "customs-seal",
+            "title": "Gümrük Helalı",
+            "alt": "Gümrük helal sistemi"
+          },
+          {
+            "id": "led-marker-lamp",
+            "title": "Ledli Sallama Lamba",
+            "alt": "LED'li sallama lamba"
+          },
+          {
+            "id": "plastic-tank-cap",
+            "title": "Plastik Depo Kapağı",
+            "alt": "Plastik depo kapağı"
+          },
+          {
+            "id": "blue-led-marker-lamp",
+            "title": "Altı Ledli Sallama Lamba",
+            "alt": "Altı LED'li mavi sallama lamba"
+          },
+          {
+            "id": "led-strip-light",
+            "title": "Metrelik Şerit Led",
+            "alt": "Metrelik LED şerit ışık"
+          },
+          {
+            "id": "led-emblems",
+            "title": "Ledli Arma Çeşitleri",
+            "alt": "LED'li arma çeşitleri"
+          },
+          {
+            "id": "trailer-support-bracket-set",
+            "title": "Dorse Dayanma Takozu",
+            "alt": "Dorse dayanma takoz seti"
+          },
+          {
+            "id": "tire-rubber",
+            "title": "Akü Lastiği",
+            "alt": "Akü lastik sistemi"
+          },
+          {
+            "id": "trailer-middle-cover-seal",
+            "title": "Dorse Orta Kapak Fitili",
+            "alt": "Dorse orta kapak fitil sistemi"
+          }
+        ]
+      }
     }
   }
 }

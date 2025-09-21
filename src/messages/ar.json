@@ -215,20 +215,416 @@
           }
         ]
       },
-      "glass-seals": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ],
-      "foam-profiles": [
-        {
-          "id": "cam-lastik-çeşitleri",
-          "title": "Cam Lastik Çeşitleri",
-          "alt": "Cam Lastik Çeşitleri resmi"
-        }
-      ]
+      "glass-seals": {
+        "title": "أنواع المطاط الزجاجي والأختام",
+        "products": [
+          {
+            "id": "glass-rubber-varieties",
+            "title": "أنواع المطاط الزجاجي",
+            "alt": "أنواع مختلفة من أختام المطاط الزجاجي"
+          },
+          {
+            "id": "velvet-glass-seals",
+            "title": "أختام الزجاج المخملية",
+            "alt": "أنواع أختام زجاجية بملمس مخملي"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "حافة ختم الزجاج المثلثية",
+            "alt": "ملف حافة ختم زجاجي مثلثي الشكل"
+          },
+          {
+            "id": "nickel-free-u-glass-seal",
+            "title": "ختم الزجاج على شكل U خالي من النيكل",
+            "alt": "ملف ختم زجاجي على شكل U خالي من النيكل"
+          },
+          {
+            "id": "quad-channel-glass-rubber",
+            "title": "مطاط زجاجي رباعي القنوات",
+            "alt": "ملف مطاط زجاجي بأربع قنوات"
+          },
+          {
+            "id": "black-glass-seal",
+            "title": "ختم الزجاج الأسود",
+            "alt": "ملف ختم زجاجي أسود اللون"
+          },
+          {
+            "id": "flanged-fixed-glass-rubber",
+            "title": "مطاط زجاجي ثابت بحافة",
+            "alt": "ملف مطاط زجاجي ثابت بتفاصيل الحافة"
+          },
+          {
+            "id": "adhesive-glass-rubber",
+            "title": "مطاط زجاجي لاصق",
+            "alt": "ملف مطاط زجاجي بخاصية اللصق"
+          },
+          {
+            "id": "velvet-glass-seal-type-1",
+            "title": "ختم الزجاج المخملي النوع 1",
+            "alt": "ختم زجاجي بسطح مخملي من النوع الأول"
+          },
+          {
+            "id": "velvet-glass-seal-type-2",
+            "title": "ختم الزجاج المخملي النوع 2",
+            "alt": "ملف ختم زجاجي مخملي من النوع الثاني"
+          },
+          {
+            "id": "velvet-glass-edge-seal",
+            "title": "ختم حافة الزجاج المخملي",
+            "alt": "ختم زجاجي مخملي لتركيب الحافة"
+          },
+          {
+            "id": "epdm-u-seals",
+            "title": "أختام EPDM على شكل U",
+            "alt": "ملفات أختام من مادة EPDM على شكل U"
+          },
+          {
+            "id": "glossy-glass-seal-flange",
+            "title": "حافة ختم الزجاج اللامعة",
+            "alt": "حافة ختم زجاجي بسطح لامع"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "أنواع الحواف المستديرة",
+            "alt": "ملفات حواف مستديرة بألوان مختلفة"
+          },
+          {
+            "id": "velvet-glass-seal-type-3",
+            "title": "ختم الزجاج المخملي النوع 3",
+            "alt": "ملف ختم زجاجي مخملي من النوع الثالث"
+          }
+        ]
+      },
+      "foam-profiles": {
+        "title": "مقاطع الإسفنج - EPDM والمطاط الطبيعي",
+        "products": [
+          {
+            "id": "solid-rubber-sponge-1",
+            "title": "إسفنج المطاط الطبيعي",
+            "alt": "ملف إسفنج المطاط الطبيعي"
+          },
+          {
+            "id": "solid-rubber-sponge-2",
+            "title": "إسفنج المطاط الطبيعي",
+            "alt": "ملف إسفنج المطاط الطبيعي من النوع الثاني"
+          },
+          {
+            "id": "medium-split-seal",
+            "title": "ختم مشقوق الوسط",
+            "alt": "ملف ختم مشقوق الوسط"
+          },
+          {
+            "id": "epdm-sponge-1",
+            "title": "إسفنج EPDM",
+            "alt": "ملف إسفنج EPDM"
+          },
+          {
+            "id": "epdm-sponge-2",
+            "title": "إسفنج EPDM",
+            "alt": "ملف إسفنج EPDM من النوع الثاني"
+          },
+          {
+            "id": "epdm-sponge-3",
+            "title": "إسفنج EPDM",
+            "alt": "ملف إسفنج EPDM من النوع الثالث"
+          },
+          {
+            "id": "epdm-sponge-4",
+            "title": "إسفنج EPDM",
+            "alt": "ملف إسفنج EPDM من النوع الرابع"
+          },
+          {
+            "id": "epdm-sponge-tube-seal",
+            "title": "أختام أنابيب إسفنج EPDM",
+            "alt": "ملف ختم أنبوب إسفنج EPDM"
+          }
+        ]
+      },
+      "hoses": {
+        "title": "أنواع الخراطيم والأنابيب",
+        "products": [
+          {
+            "id": "rubber-inflation-hose-1",
+            "title": "خرطوم نفخ الإطارات",
+            "alt": "خرطوم نفخ إطارات مضفور"
+          },
+          {
+            "id": "rubber-inflation-hose-2",
+            "title": "خرطوم نفخ الإطارات",
+            "alt": "خرطوم نفخ إطارات أسود"
+          },
+          {
+            "id": "rubber-inflation-hose-3",
+            "title": "خرطوم نفخ الإطارات",
+            "alt": "خرطوم نفخ إطارات أبيض مضفور"
+          },
+          {
+            "id": "b-type-similar-hose",
+            "title": "خرطوم وقود نوع B",
+            "alt": "خرطوم بنزين نوع B"
+          },
+          {
+            "id": "e-type-fuel-hose",
+            "title": "خرطوم وقود نوع E",
+            "alt": "خرطوم وقود نوع E"
+          },
+          {
+            "id": "air-oxygen-hose",
+            "title": "خرطوم الهواء والأكسجين",
+            "alt": "خرطوم هواء وأكسجين ملون"
+          },
+          {
+            "id": "thin-transparent-hoses",
+            "title": "خراطيم شفافة رفيعة",
+            "alt": "خراطيم بلاستيكية شفافة رفيعة"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "خرطوم شفاف بيضاوي",
+            "alt": "خرطوم شفاف بمقطع بيضاوي"
+          },
+          {
+            "id": "reinforced-transparent-hoses",
+            "title": "خراطيم شفافة معززة",
+            "alt": "خراطيم شفافة سميكة"
+          },
+          {
+            "id": "polyurethane-hose",
+            "title": "خرطوم البولي يوريثان",
+            "alt": "خرطوم بولي يوريثان أزرق"
+          },
+          {
+            "id": "braided-transparent-hoses",
+            "title": "خراطيم شفافة مضفورة",
+            "alt": "خراطيم شفافة مضفورة"
+          },
+          {
+            "id": "3-2mm-e-type-hose",
+            "title": "خرطوم نوع E بقطر 3.2 مم",
+            "alt": "خرطوم أخضر نوع E بقطر 3.2 مم"
+          },
+          {
+            "id": "air-hose-pvc",
+            "title": "خرطوم هواء PVC",
+            "alt": "خرطوم هواء PVC أسود"
+          },
+          {
+            "id": "wire-braided-transparent-hoses",
+            "title": "خراطيم مضفورة بالسلك",
+            "alt": "خراطيم شفافة مضفورة بالسلك"
+          },
+          {
+            "id": "macaroni-hoses",
+            "title": "خراطيم المعكرونة",
+            "alt": "خراطيم سوداء نوع المعكرونة"
+          }
+        ]
+      },
+      "door-trunk-seals": {
+        "title": "مجموعات أختام الأبواب الكاملة",
+        "products": [
+          {
+            "id": "megan-door-seal-kit",
+            "title": "مجموعة ختم باب نوع ميجان كاملة",
+            "alt": "مجموعة ختم باب نوع ميجان كاملة"
+          },
+          {
+            "id": "opel-corsa-door-seal-kit",
+            "title": "مجموعة ختم باب نوع أوبل كورسا كاملة",
+            "alt": "مجموعة ختم باب نوع أوبل كورسا كاملة"
+          },
+          {
+            "id": "dacia-door-seal-kit",
+            "title": "مجموعة ختم باب نوع داسيا كاملة",
+            "alt": "مجموعة ختم باب نوع داسيا كاملة"
+          },
+          {
+            "id": "laguna-door-seal-kit",
+            "title": "مجموعة ختم باب نوع لاجونا كاملة",
+            "alt": "مجموعة ختم باب نوع لاجونا كاملة"
+          },
+          {
+            "id": "fiat-linea-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فيات لينيا كاملة",
+            "alt": "مجموعة ختم باب نوع فيات لينيا كاملة"
+          },
+          {
+            "id": "fiat-albea-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فيات ألبيا كاملة",
+            "alt": "مجموعة ختم باب نوع فيات ألبيا كاملة"
+          },
+          {
+            "id": "opel-vectra-door-seal-kit",
+            "title": "مجموعة ختم باب نوع أوبل فيكترا كاملة",
+            "alt": "مجموعة ختم باب نوع أوبل فيكترا كاملة"
+          },
+          {
+            "id": "volkswagen-caddy-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فولكس واجن كادي كاملة",
+            "alt": "مجموعة ختم باب نوع فولكس واجن كادي كاملة"
+          },
+          {
+            "id": "ford-connect-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فورد كونكت كاملة",
+            "alt": "مجموعة ختم باب نوع فورد كونكت كاملة"
+          },
+          {
+            "id": "renault-kangoo-door-seal-kit",
+            "title": "مجموعة ختم باب نوع رينو كانجو كاملة",
+            "alt": "مجموعة ختم باب نوع رينو كانجو كاملة"
+          },
+          {
+            "id": "ford-transit-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فورد ترانزيت كاملة",
+            "alt": "مجموعة ختم باب نوع فورد ترانزيت كاملة"
+          },
+          {
+            "id": "ford-cargo-door-seal-kit",
+            "title": "مجموعة ختم باب نوع فورد كارجو كاملة",
+            "alt": "مجموعة ختم باب نوع فورد كارجو كاملة"
+          }
+        ]
+      },
+      "pvc-tank-belts": {
+        "title": "ملفات PVC وأحزمة خزان المطاط",
+        "products": [
+          {
+            "id": "tank-belt-seal",
+            "title": "ختم حزام الخزان",
+            "alt": "ملف ختم حزام الخزان"
+          },
+          {
+            "id": "ym-mudguard-seal",
+            "title": "ختم واقي الطين Y.M.",
+            "alt": "ملف ختم واقي الطين Y.M."
+          },
+          {
+            "id": "mudguard-seal",
+            "title": "ختم واقي الطين",
+            "alt": "ملف ختم واقي الطين"
+          },
+          {
+            "id": "special-mudguard-seal",
+            "title": "ختم واقي الطين الخاص",
+            "alt": "ملف ختم واقي الطين الخاص"
+          },
+          {
+            "id": "special-pvc-profiles",
+            "title": "ملفات PVC الخاصة",
+            "alt": "أنواع ملفات PVC الخاصة"
+          },
+          {
+            "id": "triangular-glass-seal-flange",
+            "title": "حافة ختم الزجاج المثلثية",
+            "alt": "ملف حافة ختم زجاجي مثلثي"
+          },
+          {
+            "id": "round-flange-varieties",
+            "title": "أنواع الحواف المستديرة",
+            "alt": "أنواع الحواف المستديرة"
+          },
+          {
+            "id": "oval-transparent-hose",
+            "title": "خرطوم شفاف بيضاوي",
+            "alt": "ملف خرطوم شفاف بيضاوي"
+          },
+          {
+            "id": "butterfly-seal",
+            "title": "ختم الفراشة",
+            "alt": "ملف ختم الفراشة"
+          },
+          {
+            "id": "fire-door-seal",
+            "title": "ختم باب الحريق",
+            "alt": "ملف ختم باب الحريق"
+          },
+          {
+            "id": "joinery-interior-door-seal",
+            "title": "ختم النجارة والباب الداخلي",
+            "alt": "ملف ختم النجارة والباب الداخلي"
+          }
+        ]
+      },
+      "truck-trailer-materials": {
+        "title": "مواد الشاحنات والمقطورات",
+        "products": [
+          {
+            "id": "truck-trailer-hose",
+            "title": "خرطوم الشاحنة والمقطورة",
+            "alt": "نظام خرطوم الشاحنة والمقطورة"
+          },
+          {
+            "id": "cabin-cleaning-hose",
+            "title": "خرطوم تنظيف المقصورة",
+            "alt": "خرطوم تنظيف المقصورة"
+          },
+          {
+            "id": "mudguard-back-rubber",
+            "title": "مطاط شد واقي الطين",
+            "alt": "نظام مطاط شد واقي الطين"
+          },
+          {
+            "id": "truck-back-rubber",
+            "title": "مطاط شد الشاحنة",
+            "alt": "نظام مطاط شد الشاحنة"
+          },
+          {
+            "id": "trailer-support-bracket",
+            "title": "قوس دعم المقطورة",
+            "alt": "قوس دعم المقطورة"
+          },
+          {
+            "id": "metal-tank-cap",
+            "title": "غطاء الخزان المعدني",
+            "alt": "غطاء الخزان المعدني"
+          },
+          {
+            "id": "customs-seal",
+            "title": "ختم الجمارك",
+            "alt": "نظام ختم الجمارك"
+          },
+          {
+            "id": "led-marker-lamp",
+            "title": "مصباح إشارة LED",
+            "alt": "مصباح إشارة LED"
+          },
+          {
+            "id": "plastic-tank-cap",
+            "title": "غطاء الخزان البلاستيكي",
+            "alt": "غطاء الخزان البلاستيكي"
+          },
+          {
+            "id": "blue-led-marker-lamp",
+            "title": "مصباح إشارة بستة LED",
+            "alt": "مصباح إشارة أزرق بستة LED"
+          },
+          {
+            "id": "led-strip-light",
+            "title": "شريط إضاءة LED",
+            "alt": "شريط إضاءة LED بالمتر"
+          },
+          {
+            "id": "led-emblems",
+            "title": "أنواع الشعارات LED",
+            "alt": "أنواع شعارات LED"
+          },
+          {
+            "id": "trailer-support-bracket-set",
+            "title": "قوس دعم المقطورة",
+            "alt": "طقم قوس دعم المقطورة"
+          },
+          {
+            "id": "tire-rubber",
+            "title": "مطاط البطارية",
+            "alt": "نظام مطاط البطارية"
+          },
+          {
+            "id": "trailer-middle-cover-seal",
+            "title": "ختم الغطاء الأوسط للمقطورة",
+            "alt": "نظام ختم الغطاء الأوسط للمقطورة"
+          }
+        ]
+      }
     }
   }
 }
