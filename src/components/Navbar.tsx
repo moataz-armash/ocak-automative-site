@@ -24,7 +24,7 @@ const menuItems = [
         path: "/urunler/truck-trailer-materials",
       },
       { title: "pneumatic-fittings", path: "/urunler/pneumatic-fittings" },
-      { title: "other", path: "/urunler/other" },
+      { title: "other-products", path: "/urunler/other-products" },
     ],
   },
   { title: "contact", path: "/iletisim" },

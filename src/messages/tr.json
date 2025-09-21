@@ -11,9 +11,9 @@
       "hoses": "Hortum Çeşitleri",
       "door-trunk-seals": "Kapı ve Bagaj Fitilleri",
       "pvc-tank-belts": "PVC Profiller ve Depo Kuşak Lastikleri",
-      "truck-trailer": "Tır ve Dorse Malzemeleri",
+      "truck-trailer-materials": "Tır ve Dorse Malzemeleri",
       "pneumatic-fittings": "Pnömatik Rakorlar",
-      "other": "Diğer Ürünler"
+      "other-products": "Diğer Ürünler"
     }
   },
 
@@ -624,6 +624,106 @@
             "id": "trailer-middle-cover-seal",
             "title": "Dorse Orta Kapak Fitili",
             "alt": "Dorse orta kapak fitil sistemi"
+          }
+        ]
+      },
+      "pneumatic-fittings": {
+        "title": "Pnömatik Rakorlar Ve Diğer Rakor Çeşitleri",
+        "products": [
+          {
+            "id": "pneumatic-straight-fittings",
+            "title": "Pnömatik Düz Ekler",
+            "alt": "Pnömatik düz ek rakorları"
+          },
+          {
+            "id": "pneumatic-l-fittings",
+            "title": "Pnömatik L Ekler",
+            "alt": "Pnömatik L tipi ek rakorları"
+          },
+          {
+            "id": "pneumatic-iron-fittings",
+            "title": "Pnömatik Demir Ek",
+            "alt": "Pnömatik demir ek rakorları"
+          },
+          {
+            "id": "pneumatic-t-fittings",
+            "title": "Pnömatik T Ekler",
+            "alt": "Pnömatik T tipi ek rakorları"
+          },
+          {
+            "id": "metric-series-pneumatic-fittings",
+            "title": "Metrik Serisi Pnömatik Ek",
+            "alt": "Metrik serisi pnömatik ek rakorları"
+          },
+          {
+            "id": "pneumatic-elbow-fittings",
+            "title": "Pnömatik Ek Kruva",
+            "alt": "Pnömatik dirsek ek rakorları"
+          },
+          {
+            "id": "pneumatic-iron-elbow-fittings",
+            "title": "Pnömatik Demir Dirsek",
+            "alt": "Pnömatik demir dirsek rakorları"
+          },
+          {
+            "id": "pneumatic-iron-t-fittings",
+            "title": "Pnömatik Demir T",
+            "alt": "Pnömatik demir T ek rakorları"
+          },
+          {
+            "id": "iron-fitting-varieties",
+            "title": "Demir Ek Çeşitleri",
+            "alt": "Demir ek rakor çeşitleri"
+          },
+          {
+            "id": "butterfly-and-pin-fittings",
+            "title": "Kelebek Ve Pimi",
+            "alt": "Kelebek ve pim rakor aksesuarları"
+          },
+          {
+            "id": "metal-t-fittings",
+            "title": "Metal T Ekler",
+            "alt": "Metal T ek rakorları"
+          },
+          {
+            "id": "italian-type-chuck",
+            "title": "İtalyan Tipi Mandal",
+            "alt": "İtalyan tipi mandal rakor"
+          },
+          {
+            "id": "yellow-air-pump-chuck",
+            "title": "Sarı Hava Pompa Mandalı",
+            "alt": "Sarı hava pompa mandal rakor"
+          }
+        ]
+      },
+      "other-products": {
+        "title": "Diğer Ürünlerimiz",
+        "products": [
+          {
+            "id": "hose-clamp-varieties",
+            "title": "Hortum Kelebçe Çeşitleri",
+            "alt": "Hortum kelebçe çeşitleri"
+          },
+          {
+            "id": "plastic-clamp-varieties",
+            "title": "Plastik Kelebçe Çeşitleri",
+            "alt": "Plastik kelebçe çeşitleri"
+          },
+          {
+            "id": "adhesive-varieties",
+            "title": "Yapıştırıcı Çeşitleri",
+            "alt": "Yapıştırıcı ürün çeşitleri"
+          },
+          {
+            "id": "rubber-license-plate-varieties",
+            "title": "Kauçuk Plaka Çeşitleri",
+            "alt": "Kauçuk plaka ürün çeşitleri"
+          },
+          {
+            "id": "cabin-lifting-hoses",
+            "title": "Kabin Kaldırma Hortumları",
+            "alt": "Kabin kaldırma hortum sistemleri"
           }
         ]
       }

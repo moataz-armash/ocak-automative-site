@@ -63,8 +63,8 @@ export const routing = defineRouting({
       ar: "/منتجات/وصلات-نيوماتيكية",
       tr: "/urunler/pnomatik-rakorlar",
     },
-    "/urunler/other": {
-      en: "/products/other",
+    "/urunler/other-products": {
+      en: "/products/other-products",
       ar: "/منتجات/أخرى",
       tr: "/urunler/diger-urunler",
     },

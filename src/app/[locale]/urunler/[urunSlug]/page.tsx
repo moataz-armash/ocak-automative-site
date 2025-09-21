@@ -2,6 +2,23 @@
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
 
+import imgOther1 from "@/public/images/other/other1.jpeg";
+import imgOther2 from "@/public/images/other/other2.jpeg";
+
+import imgPneumatic1 from "@/public/images/pneumatic/pneumatic1.jpeg";
+import imgPneumatic2 from "@/public/images/pneumatic/pneumatic2.jpeg";
+import imgPneumatic3 from "@/public/images/pneumatic/pneumatic3.jpeg";
+import imgPneumatic4 from "@/public/images/pneumatic/pneumatic4.jpeg";
+import imgPneumatic5 from "@/public/images/pneumatic/pneumatic5.jpeg";
+import imgPneumatic6 from "@/public/images/pneumatic/pneumatic6.jpeg";
+import imgPneumatic7 from "@/public/images/pneumatic/pneumatic7.jpeg";
+import imgPneumatic8 from "@/public/images/pneumatic/pneumatic8.jpeg";
+import imgPneumatic9 from "@/public/images/pneumatic/pneumatic9.jpeg";
+import imgPneumatic10 from "@/public/images/pneumatic/pneumatic10.jpeg";
+import imgPneumatic11 from "@/public/images/pneumatic/pneumatic11.jpeg";
+import imgPneumatic12 from "@/public/images/pneumatic/pneumatic12.jpeg";
+import imgPneumatic13 from "@/public/images/pneumatic/pneumatic13.jpeg";
+
 import imgTruck1 from "@/public/images/truck/truck1.jpeg";
 import imgTruck2 from "@/public/images/truck/truck2.jpeg";
 import imgTruck3 from "@/public/images/truck/truck3.jpeg";
@@ -219,6 +236,28 @@ const ProductImages: Record<string, Record<string, StaticImageData | null>> = {
     "tire-rubber": imgTruck14,
     "trailer-middle-cover-seal": imgTruck15,
   },
+  "pneumatic-fittings": {
+    "pneumatic-straight-fittings": imgPneumatic1,
+    "pneumatic-l-fittings": imgPneumatic2,
+    "pneumatic-iron-fittings": imgPneumatic3,
+    "pneumatic-t-fittings": imgPneumatic4,
+    "metric-series-pneumatic-fittings": imgPneumatic5,
+    "pneumatic-elbow-fittings": imgPneumatic6,
+    "pneumatic-iron-elbow-fittings": imgPneumatic7,
+    "pneumatic-iron-t-fittings": imgPneumatic8,
+    "iron-fitting-varieties": imgPneumatic9,
+    "butterfly-and-pin-fittings": imgPneumatic10,
+    "metal-t-fittings": imgPneumatic11,
+    "italian-type-chuck": imgPneumatic12,
+    "yellow-air-pump-chuck": imgPneumatic13,
+  },
+  "other-products": {
+    "hose-clamp-varieties": imgOther1,
+    "plastic-clamp-varieties": imgOther2,
+    "adhesive-varieties": null,
+    "rubber-license-plate-varieties": null,
+    "cabin-lifting-hoses": null,
+  },
 };
 
 export default function CategoryPage({ params }: Props) {
@@ -285,7 +324,7 @@ export default function CategoryPage({ params }: Props) {
       </ul>
 
       {/* Modal */}
-      {selectedImage && (
+      {selectedImage && ProductImages[urunSlug][selectedImage.id] && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 transition-opacity duration-300"
           onClick={() => setSelectedImage(null)}>
@@ -305,7 +344,7 @@ export default function CategoryPage({ params }: Props) {
                 src={ProductImages[urunSlug][selectedImage.id]}
                 alt={selectedImage.alt}
                 fill
-                className="object-contain"
+                className="object-fill"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                 priority
               />

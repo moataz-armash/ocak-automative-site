@@ -11,9 +11,9 @@
       "hoses": "Hose Types",
       "door-trunk-seals": "Door and Trunk Seals",
       "pvc-tank-belts": "PVC Profiles & Tank Belts",
-      "truck-trailer": "Truck & Trailer Materials",
+      "truck-trailer-materials": "Truck & Trailer Materials",
       "pneumatic-fittings": "Pneumatic Fittings",
-      "other": "Other Products"
+      "other-products": "Other Products"
     }
   },
 
@@ -619,6 +619,106 @@
             "id": "trailer-middle-cover-seal",
             "title": "Trailer Middle Cover Seal",
             "alt": "Trailer middle cover seal system"
+          }
+        ]
+      },
+      "pneumatic-fittings": {
+        "title": "Pneumatic Fittings & Other Fitting Types",
+        "products": [
+          {
+            "id": "pneumatic-straight-fittings",
+            "title": "Pneumatic Straight Fittings",
+            "alt": "Pneumatic straight fitting connectors"
+          },
+          {
+            "id": "pneumatic-l-fittings",
+            "title": "Pneumatic L Fittings",
+            "alt": "Pneumatic L-type fitting connectors"
+          },
+          {
+            "id": "pneumatic-iron-fittings",
+            "title": "Pneumatic Iron Fittings",
+            "alt": "Pneumatic iron fitting connectors"
+          },
+          {
+            "id": "pneumatic-t-fittings",
+            "title": "Pneumatic T Fittings",
+            "alt": "Pneumatic T-type fitting connectors"
+          },
+          {
+            "id": "metric-series-pneumatic-fittings",
+            "title": "Metric Series Pneumatic Fittings",
+            "alt": "Metric series pneumatic fitting connectors"
+          },
+          {
+            "id": "pneumatic-elbow-fittings",
+            "title": "Pneumatic Elbow Fittings",
+            "alt": "Pneumatic elbow fitting connectors"
+          },
+          {
+            "id": "pneumatic-iron-elbow-fittings",
+            "title": "Pneumatic Iron Elbow Fittings",
+            "alt": "Pneumatic iron elbow fitting connectors"
+          },
+          {
+            "id": "pneumatic-iron-t-fittings",
+            "title": "Pneumatic Iron T Fittings",
+            "alt": "Pneumatic iron T fitting connectors"
+          },
+          {
+            "id": "iron-fitting-varieties",
+            "title": "Iron Fitting Varieties",
+            "alt": "Iron fitting connector varieties"
+          },
+          {
+            "id": "butterfly-and-pin-fittings",
+            "title": "Butterfly & Pin Fittings",
+            "alt": "Butterfly and pin fitting accessories"
+          },
+          {
+            "id": "metal-t-fittings",
+            "title": "Metal T Fittings",
+            "alt": "Metal T fitting connectors"
+          },
+          {
+            "id": "italian-type-chuck",
+            "title": "Italian Type Chuck",
+            "alt": "Italian type chuck fitting"
+          },
+          {
+            "id": "yellow-air-pump-chuck",
+            "title": "Yellow Air Pump Chuck",
+            "alt": "Yellow air pump chuck fitting"
+          }
+        ]
+      },
+      "other-products": {
+        "title": "Our Other Products",
+        "products": [
+          {
+            "id": "hose-clamp-varieties",
+            "title": "Hose Clamp Varieties",
+            "alt": "Hose clamp varieties"
+          },
+          {
+            "id": "plastic-clamp-varieties",
+            "title": "Plastic Clamp Varieties",
+            "alt": "Plastic clamp varieties"
+          },
+          {
+            "id": "adhesive-varieties",
+            "title": "Adhesive Varieties",
+            "alt": "Adhesive product varieties"
+          },
+          {
+            "id": "rubber-license-plate-varieties",
+            "title": "Rubber License Plate Varieties",
+            "alt": "Rubber license plate product varieties"
+          },
+          {
+            "id": "cabin-lifting-hoses",
+            "title": "Cabin Lifting Hoses",
+            "alt": "Cabin lifting hose systems"
           }
         ]
       }
