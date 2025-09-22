@@ -12,6 +12,8 @@ html {
 @theme {
   --color-primary-btn: red;
   --color-primary-btn-hover: #e62727;
+  --color-secondary-btn-hover: #e54646;
+  --color-card: #feeeee;
   --color-secondary-bg: #f3f2ec;
   --color-third-bg: #1e93ab;
 }
@@ -22,6 +24,8 @@ html {
   name: "light";
   --color-primary-btn: red;
   --color-primary-btn-hover: #cb0404;
+  --color-secondary-btn-hover: #e54646;
+  --color-card: #feeeee;
   --color-secondary-bg: #f3f2ec;
   --color-third-bg: #1e93ab;
 }

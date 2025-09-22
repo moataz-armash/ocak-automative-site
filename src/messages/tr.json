@@ -728,5 +728,33 @@
         ]
       }
     }
+  },
+  "contact": {
+    "get-in-touch": "Bizimle İletişime Geçin",
+    "paragraph": "Bizimle iletişime geçmekten çekinmeyin. Sorularınızı buradan iletin, size en kısa sürede geri döneceğiz.",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "mapTitle": "Harita",
+    "labels": {
+      "name": "Adınız",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "message": "Mesaj"
+    },
+    "placeholders": {
+      "name": "Ad Soyad",
+      "email": "email@adres.com",
+      "phone": "+90 ...",
+      "message": "Mesajınız..."
+    },
+    "buttons": {
+      "send": "Gönder",
+      "sending": "Gönderiliyor..."
+    },
+    "messages": {
+      "sent": "Mesajınız gönderildi. Teşekkürler!",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    }
   }
 }

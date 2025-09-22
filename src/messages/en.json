@@ -723,5 +723,33 @@
         ]
       }
     }
+  },
+  "contact": {
+    "get-in-touch": "Get In Touch",
+    "paragraph": "Feel free to contact us? submit your queries here and we will get back to you as soon as possible.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "mapTitle": "Map",
+    "labels": {
+      "name": "Your Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Full name",
+      "email": "email@example.com",
+      "phone": "+1 ...",
+      "message": "Your message..."
+    },
+    "buttons": {
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "messages": {
+      "sent": "Your message has been sent. Thanks!",
+      "error": "Something went wrong. Please try again."
+    }
   }
 }
