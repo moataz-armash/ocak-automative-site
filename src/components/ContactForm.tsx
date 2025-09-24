@@ -1,28 +1,37 @@
 "use client";
+import { mailAction } from "@/app/[locale]/iletisim/action";
+import { mailSchema } from "@/lib/mailValidation";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useActionState, useState } from "react";
+import { ValidatedInput } from "./ui/ValidateInput";
 
 export default function ContactForm() {
   const t = useTranslations("contact");
-  const [state, setState] = useState<"idle" | "loading" | "sent" | "error">(
-    "idle"
-  );
+  const [wasSubmitted, setWasSubmitted] = useState(false);
+  // const [state, setState] = useState<"idle" | "loading" | "sent" | "error">(
+  //   "idle"
+  // );
+  const [state, action, isPending] = useActionState(mailAction, {});
   const [msg, setMsg] = useState("");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setState("loading");
+    setWasSubmitted(true);
     const form = e.currentTarget;
     const formData = new FormData(form);
-
+    const data = Object.fromEntries(formData);
+    const validationResult = mailSchema.safeParse(data);
+    if (!validationResult.success) {
+      e.preventDefault();
+    }
     const res = await fetch("/api/contact", { method: "POST", body: formData });
 
     if (res.ok) {
-      setState("sent");
+      // setState("sent");
       setMsg(t("messages.sent"));
       form.reset();
     } else {
-      setState("error");
+      // setState("error");
       setMsg(t("messages.error"));
     }
   }
@@ -41,7 +50,11 @@ export default function ContactForm() {
       </div>
 
       {/* Form */}
-      <form onSubmit={onSubmit} className="space-y-5 p-4" noValidate>
+      <form
+        onSubmit={onSubmit}
+        action={action}
+        className="space-y-5 p-4"
+        noValidate>
         {/* Honeypot */}
         <input
           type="checkbox"
@@ -55,11 +68,15 @@ export default function ContactForm() {
           <label className="mb-1 block text-sm font-medium">
             {t("labels.name")} <span className="text-red-500">*</span>
           </label>
-          <input
+          <ValidatedInput
+            type="name"
             name="name"
-            required
-            placeholder={t("placeholders.name")}
             className="input input-bordered w-full"
+            placeholder={t("placeholders.name")}
+            wasSubmitted={wasSubmitted}
+            fieldSchema={mailSchema.shape["name"]}
+            defaultValue={state.form?.name}
+            errors={state.errors?.name}
           />
         </div>
 
@@ -67,12 +84,15 @@ export default function ContactForm() {
           <label className="mb-1 block text-sm font-medium">
             {t("labels.email")} <span className="text-red-500">*</span>
           </label>
-          <input
+          <ValidatedInput
             type="email"
             name="email"
-            required
-            placeholder={t("placeholders.email")}
             className="input input-bordered w-full"
+            placeholder={t("placeholders.email")}
+            wasSubmitted={wasSubmitted}
+            fieldSchema={mailSchema.shape["email"]}
+            defaultValue={state.form?.email}
+            errors={state.errors?.email}
           />
         </div>
 
@@ -80,11 +100,15 @@ export default function ContactForm() {
           <label className="mb-1 block text-sm font-medium">
             {t("labels.phone")} <span className="text-red-500">*</span>
           </label>
-          <input
+          <ValidatedInput
+            type="phone"
             name="phone"
-            required
-            placeholder={t("placeholders.phone")}
             className="input input-bordered w-full"
+            placeholder={t("placeholders.phone")}
+            wasSubmitted={wasSubmitted}
+            fieldSchema={mailSchema.shape["phone"]}
+            defaultValue={state.form?.phone}
+            errors={state.errors?.phone}
           />
         </div>
 
@@ -92,30 +116,35 @@ export default function ContactForm() {
           <label className="mb-1 block text-sm font-medium">
             {t("labels.message")} <span className="text-red-500">*</span>
           </label>
-          <textarea
+          <ValidatedInput
+            type="message"
             name="message"
-            required
-            rows={5}
-            placeholder={t("placeholders.message")}
             className="textarea textarea-bordered w-full"
+            placeholder={t("placeholders.message")}
+            wasSubmitted={wasSubmitted}
+            fieldSchema={mailSchema.shape["message"]}
+            defaultValue={state.form?.message}
+            errors={state.errors?.message}
+            rows={5}
           />
         </div>
 
         <button
           type="submit"
-          disabled={state === "loading"}
+          // disabled={state === "loading"}
           className="btn w-full bg-gradient-to-l to-primary-btn-hover from-third-bg text-white rounded-xl">
-          {state === "loading" ? t("buttons.sending") : t("buttons.send")}
+          {/* {state === "loading" ? t("buttons.sending") : t("buttons.send")
+          } */}
         </button>
 
-        {msg && (
+        {/* {msg && (
           <p
             className={`text-sm ${
               state === "sent" ? "text-green-600" : "text-red-600"
             }`}>
             {msg}
           </p>
-        )}
+        )} */}
       </form>
     </div>
   );
