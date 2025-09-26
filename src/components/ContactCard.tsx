@@ -1,11 +1,5 @@
-import { ElementType } from "react";
+import { ContactCardProps } from "@/app/types/contactCard";
 
-type ContactCardProps = {
-  icon: ElementType;
-  title: string;
-  description: string;
-  className: string;
-};
 export default function ContactCard({
   icon: Icon,
   title,

@@ -6,29 +6,8 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import Image from "next/image";
 import logo from "@/public/Images/ocak_logo.png";
 import { ChevronDown } from "lucide-react";
-const menuItems = [
-  { title: "home", path: "/" },
-  { title: "about", path: "/hakkimizda" },
-  {
-    title: "products",
-    path: "/urunler",
-    productsChildren: [
-      { title: "metal-profiles", path: "/urunler/metal-profiles" },
-      { title: "glass-seals", path: "/urunler/glass-seals" },
-      { title: "foam-profiles", path: "/urunler/foam-profiles" },
-      { title: "hoses", path: "/urunler/hoses" },
-      { title: "door-trunk-seals", path: "/urunler/door-trunk-seals" },
-      { title: "pvc-tank-belts", path: "/urunler/pvc-tank-belts" },
-      {
-        title: "truck-trailer-materials",
-        path: "/urunler/truck-trailer-materials",
-      },
-      { title: "pneumatic-fittings", path: "/urunler/pneumatic-fittings" },
-      { title: "other-products", path: "/urunler/other-products" },
-    ],
-  },
-  { title: "contact", path: "/iletisim" },
-];
+import ThemeSwitch from "./ThemeSwitch";
+import { menuItems } from "@/app/lib/menuItems";
 
 export default function Navbar() {
   const t = useTranslations("nav");
@@ -50,7 +29,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-12 lg:px-16">
+    <div className="navbar bg-base-100 shadow-sm lg:px-16">
       {/* Left: Logo + Mobile Menu */}
       <div className="navbar-start">
         {/* Mobile dropdown (kept simple, <details> works fine on mobile) */}
@@ -158,7 +137,8 @@ export default function Navbar() {
       </div>
 
       {/* Right: Locale Switcher */}
-      <div className="navbar-end">
+      <div className="flex navbar-end gap-2">
+        <ThemeSwitch />
         <LocaleSwitcher />
       </div>
     </div>

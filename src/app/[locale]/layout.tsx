@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { locales } from "@/i18n/locales";
+// import { locales } from "@/i18n/locales";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Şirket Adı – Kurumsal",
@@ -39,6 +40,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main className="min-h-[70vh]">{children}</main>
+          <Toaster />
           <Footer />
         </NextIntlClientProvider>
       </body>

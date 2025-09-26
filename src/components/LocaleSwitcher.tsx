@@ -1,30 +1,41 @@
 "use client";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { routing } from "@/i18n/routing";
+
+import { languageItems } from "@/app/lib/langaugeItems";
+import { Link, usePathname } from "@/navigation"; // <-- FROM next-intl helper you created
+import Image from "next/image";
+import { useMemo } from "react";
 
 export default function LocaleSwitcher() {
-  const pathname = usePathname();
+  const pathname = usePathname(); // current path (next-intl aware)
+
+  const locales = useMemo(() => languageItems, []);
+
   return (
     <div className="ml-2 dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-sm">
-        TR/EN/AR
+        TR / EN / AR
       </div>
+
       <ul
         tabIndex={0}
-        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32">
-        {routing.locales.map((l) => {
-          const parts = pathname?.split("/") ?? [];
-          if (parts[1] && routing.locales.includes(parts[1] as any))
-            parts[1] = l;
-          else parts.unshift("", l);
-          const href = parts.join("/") || "/" + l;
-          return (
-            <li key={l}>
-              <Link href={href}>{l.toUpperCase()}</Link>
-            </li>
-          );
-        })}
+        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-36">
+        {locales.map((it) => (
+          <li key={it.locale}>
+            <Link
+              href={pathname}
+              locale={it.locale}
+              className="flex items-center gap-2">
+              <Image
+                src={it.flag}
+                alt={it.alt}
+                width={4}
+                height={4}
+                className="h-4 w-6 object-cover rounded"
+              />
+              <span>{it.label}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

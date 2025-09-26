@@ -22,7 +22,7 @@ export default function ProductCard({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="card bg-base-100 w-full shadow-lg">
+      className="card bg-base-100 w-full shadow-lg h-auto">
       <figure>
         <Image src={img} alt={alt} className="w-full h-auto rounded-t-lg" />
       </figure>
