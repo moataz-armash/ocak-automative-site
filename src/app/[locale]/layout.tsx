@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import { ThemeProvider } from "next-themes";
 // import { locales } from "@/i18n/locales";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
@@ -35,15 +36,17 @@ export default async function RootLayout({
 
   const dir = locale === "ar" ? "rtl" : "ltr";
   return (
-    <html lang={locale} dir={dir} data-theme="corporate">
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="min-h-[70vh]">{children}</main>
-          <Toaster />
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
+        <body>
+          <NextIntlClientProvider messages={messages}>
+            <Navbar />
+            <main className="min-h-[70vh]">{children}</main>
+            <Toaster />
+            <Footer />
+          </NextIntlClientProvider>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

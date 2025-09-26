@@ -8,8 +8,10 @@ import logo from "@/public/Images/ocak_logo.png";
 import { ChevronDown } from "lucide-react";
 import ThemeSwitch from "./ThemeSwitch";
 import { menuItems } from "@/app/lib/menuItems";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
+  const { resolvedTheme } = useTheme();
   const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
@@ -81,14 +83,18 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="text-xl">
-          <Image
-            src={logo}
-            alt="ocak automotive logo"
-            placeholder="blur"
-            width={90}
-            height={90}
-            blurDataURL="data:image/jpeg;base64,..."
-          />
+          {resolvedTheme === "light" ? (
+            <Image
+              src={logo}
+              alt="ocak automotive logo"
+              placeholder="blur"
+              width={90}
+              height={90}
+              blurDataURL="data:image/jpeg;base64,..."
+            />
+          ) : (
+            <h1>OCAK OTOMOTİV</h1>
+          )}
         </Link>
       </div>
 
@@ -102,7 +108,7 @@ export default function Navbar() {
                 ref={dropdownRef}
                 className="relative"
                 onMouseEnter={() => setOpen(!open)}>
-                <Link href={item.path} className="hover:text-primary-btn">
+                <Link href={item.path} className="hover:text-primary text-base">
                   {" "}
                   {t(item.title)}
                   <ChevronDown
@@ -117,7 +123,7 @@ export default function Navbar() {
                       <li key={child.title}>
                         <Link
                           href={child.path}
-                          className="block px-4 py-2 hover:bg-gray-100">
+                          className="block px-4 py-2 hover:bg-gray-100 hover:text-primary text-base">
                           {t(`productsChildren.${child.title}`)}
                         </Link>
                       </li>
@@ -127,7 +133,9 @@ export default function Navbar() {
               </li>
             ) : (
               <li key={item.title}>
-                <Link href={item.path} className="hover:text-primary-btn">
+                <Link
+                  href={item.path}
+                  className="hover:text-primary hover:bg-base-content text-base">
                   {t(item.title)}
                 </Link>
               </li>

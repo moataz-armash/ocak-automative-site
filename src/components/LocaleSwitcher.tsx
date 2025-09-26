@@ -12,7 +12,7 @@ export default function LocaleSwitcher() {
 
   return (
     <div className="ml-2 dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-sm">
+      <div tabIndex={0} role="button" className="btn btn-sm text-base-content">
         TR / EN / AR
       </div>
 
@@ -32,7 +32,7 @@ export default function LocaleSwitcher() {
                 height={4}
                 className="h-4 w-6 object-cover rounded"
               />
-              <span>{it.label}</span>
+              <span className="text-base-content">{it.label}</span>
             </Link>
           </li>
         ))}

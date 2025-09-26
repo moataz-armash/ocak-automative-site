@@ -1,74 +1,72 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Smooth scroll everywhere */
 html {
   scroll-behavior: smooth;
 }
 
+/* DaisyUI theme definitions */
 @plugin "daisyui" {
   themes:
     light --default,
-    dark --prefersdark,
-    cupcake;
+    dark --prefersdark;
 }
 
-@theme {
-  --color-primary-btn: red;
-  --color-primary-btn-hover: #e62727;
-  --color-secondary-btn-hover: #e54646;
-  --color-card: #feeeee;
-  --color-secondary-bg: #f3f2ec;
-  --color-third-bg: #1e93ab;
-}
-
-/* https://colorhunt.co/palette/e62727f3f2ecdcdcdc1e93ab */
-
+/* Light Theme */
 @plugin "daisyui/theme" {
   name: "light";
-  --color-primary-btn: red;
-  --color-primary-btn-hover: #cb0404;
-  --color-secondary-btn-hover: #e54646;
-  --color-card: #feeeee;
-  --color-secondary-bg: #f3f2ec;
-  --color-third-bg: #1e93ab;
+  --color-primary: #e62727; /* brand red */
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e93ab;
+  --color-secondary-content: #ffffff;
+  --color-accent: #5046e5;
+  --color-accent-content: #ffffff;
+
+  --color-base-100: #ffffff; /* page background */
+  --color-base-200: #f3f2ec; /* cards */
+  --color-base-300: #dcdcdc;
+  --color-base-content: #171717; /* text color */
+
+  --color-info: #3abff8;
+  --color-success: #36d399;
+  --color-warning: #fbbd23;
+  --color-error: #f87272;
 }
+
+/* Dark Theme */
 @plugin "daisyui/theme" {
   name: "dark";
-  --color-primary-btn: blue;
-  --color-primary-btn-hover: #1c96e1;
+  --color-primary: #e62727;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1e93ab;
+  --color-secondary-content: #ffffff;
+  --color-accent: #5046e5;
+  --color-accent-content: #ffffff;
+
+  --color-base-100: #0a0a0a;
+  --color-base-200: #171717;
+  --color-base-300: #2a2a2a;
+  --color-base-content: #ffffff;
+
+  --color-info: #3abff8;
+  --color-success: #36d399;
+  --color-warning: #fbbd23;
+  --color-error: #f87272;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Apply DaisyUI’s theme tokens to body */
+/* @layer base {
+  body {
+    @apply bg-base-100 text-base-content;
   }
-}
+} */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.mySwiper .swiper-navigation-icon,
+/* Your Swiper customizations */
 .mySwiper .swiper-navigation-icon {
   color: #fff;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
 }
-
 .mySwiper .swiper-pagination-bullet {
   background: #fff;
   opacity: 0.6;

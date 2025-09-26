@@ -33,15 +33,15 @@ export default function Hero() {
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 lg:gap-12">
           {/* Text column (left on desktop) */}
           <div className="space-y-6 order-2 lg:order-1 lg:col-span-1">
-            <h1 className="text-4xl font-bold sm:text-5xl text-center md:text-left md:rtl:text-right">
+            <h1 className="text-base-content text-4xl font-bold sm:text-5xl text-center md:text-left md:rtl:text-right">
               {t("title")}
             </h1>
-            <p className="text-base sm:text-lg text-center md:text-left md:rtl:text-right">
+            <p className="text-base-content sm:text-lg text-center md:text-left md:rtl:text-right">
               {t("subtitle")}
             </p>
             <div className="flex justify-center md:justify-start">
               <a
-                className="btn bg-primary-btn text-white rounded-xl hover:bg-primary-btn-hover"
+                className="btn bg-primary text-secondary-content rounded-xl hover:bg-error"
                 href={t("cta.href")}>
                 {t("cta.label")}
               </a>
