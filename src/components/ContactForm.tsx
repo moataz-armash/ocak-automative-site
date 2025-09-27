@@ -105,7 +105,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className={`btn w-full text-white rounded-xl transition-all duration-200 ${
+          className={`btn w-full text-base-100 bg-base-content rounded-xl transition-all duration-200 ${
             isLoading
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-gradient-to-l to-primary-btn-hover from-third-bg hover:shadow-lg"

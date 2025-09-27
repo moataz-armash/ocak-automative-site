@@ -42,12 +42,12 @@ export default function CategoryPage({ params }: Props) {
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
       {/* Breadcrumb */}
-      <nav className="mb-4 text-sm text-gray-600">
+      <nav className="mb-4 text-sm text-base-content">
         <Link href="/urunler" className="hover:underline">
           {t("heading")}
         </Link>
-        <span className="mx-2">/</span>
-        <span className="text-gray-900">{t(`list.${urunSlug}.title`)}</span>
+        <span className="mx-2 text-base-content">/</span>
+        <span className="text-error">{t(`list.${urunSlug}.title`)}</span>
       </nav>
 
       <h1 className="text-3xl font-bold mb-6">{t(`list.${urunSlug}.title`)}</h1>

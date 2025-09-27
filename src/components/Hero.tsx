@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import Link from "next/link";
 
 const images = [araba, benzinMazot, kapiVeBagaj, sungerliFitiller];
 
@@ -40,11 +41,11 @@ export default function Hero() {
               {t("subtitle")}
             </p>
             <div className="flex justify-center md:justify-start">
-              <a
-                className="btn bg-primary text-secondary-content rounded-xl hover:bg-error"
+              <Link
+                className="btn bg-primary text-primary-content rounded-xl hover:bg-error"
                 href={t("cta.href")}>
                 {t("cta.label")}
-              </a>
+              </Link>
             </div>
           </div>
 

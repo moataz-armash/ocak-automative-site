@@ -3,23 +3,31 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/images/ocak_logo.png";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const { resolvedTheme } = useTheme();
 
   return (
     <footer className="footer footer-horizontal footer-center p-10 mt-4">
       <aside>
-        <Link href="/" className="text-xl">
-          <Image
-            src={logo}
-            alt="Ocak Automotive logo"
-            placeholder="blur"
-            width={90}
-            height={90}
-            blurDataURL="data:image/jpeg;base64,..."
-          />
-        </Link>
+        {resolvedTheme === "light" ? (
+          <Link href="/" className="text-xl">
+            <Image
+              src={logo}
+              alt="Ocak Automotive logo"
+              placeholder="blur"
+              width={90}
+              height={90}
+              blurDataURL="data:image/jpeg;base64,..."
+            />
+          </Link>
+        ) : (
+          <h1 className="text-xl text-base-content bg-error-content px-4 py-1 rounded-2xl">
+            OCAK OTOMOTİV
+          </h1>
+        )}
         <p className="font-bold">{t("company")}</p>
         <p>
           Copyright © {new Date().getFullYear()} – {t("copyright")}

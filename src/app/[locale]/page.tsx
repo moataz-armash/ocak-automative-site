@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="bg-secondary-bg py-2">
-        <h1 className="px-6 font-bold text-2xl py-6 text-center">
+      <div className="bg-base-100 py-2">
+        <h1 className="px-6 font-bold text-3xl py-6 text-center tracking-wider">
           {t("ourProducts")}
         </h1>
         <section className="grid p-4 md:grid-cols-4 gap-6 px-6 lg:px-16">

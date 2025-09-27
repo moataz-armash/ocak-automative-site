@@ -56,7 +56,9 @@ export default function Navbar() {
               item.productsChildren ? (
                 <li key={item.title}>
                   <details>
-                    <summary>{t(item.title)}</summary>
+                    <summary className="hover:bg-base-100 hover:text-primary">
+                      {t(item.title)}
+                    </summary>
                     <ul className="p-2">
                       {item.productsChildren.map((child) => (
                         <li key={child.title}>
@@ -72,7 +74,9 @@ export default function Navbar() {
                 </li>
               ) : (
                 <li key={item.title}>
-                  <Link href={item.path} className="hover:text-primary-btn">
+                  <Link
+                    href={item.path}
+                    className="hover:text-primary hover:bg-base-content">
                     {t(item.title)}
                   </Link>
                 </li>
@@ -133,9 +137,7 @@ export default function Navbar() {
               </li>
             ) : (
               <li key={item.title}>
-                <Link
-                  href={item.path}
-                  className="hover:text-primary hover:bg-base-content text-base">
+                <Link href={item.path} className="hover:text-primary text-base">
                   {t(item.title)}
                 </Link>
               </li>

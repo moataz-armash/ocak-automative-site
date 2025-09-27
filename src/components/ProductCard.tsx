@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/motion";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export default function ProductCard({
   title,
@@ -27,12 +28,14 @@ export default function ProductCard({
         <Image src={img} alt={alt} className="w-full h-auto rounded-t-lg" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-black">{title}</h2>
-        <p>{description}</p>
+        <h2 className="card-title text-base-content">{title}</h2>
+        <p className="text-base-content">{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn hover:bg-primary-btn-hover hover:text-white">
+          <Link
+            href="/urunler"
+            className="btn hover:bg-primary-btn-hover hover:text-base-content hover:bg-info-content">
             {detay}
-          </button>
+          </Link>
         </div>
       </div>
     </motion.div>
