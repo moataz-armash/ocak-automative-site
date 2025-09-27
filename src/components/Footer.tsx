@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="flex gap-4">
             {/* Facebook link */}
             <a
-              href="#"
+              href="https://www.facebook.com/pages/OCAK-OTOMOT%C4%B0V/446271218779453"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
               aria-label="Facebook link">
               <svg

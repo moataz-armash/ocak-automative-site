@@ -11,7 +11,7 @@ export const routing = defineRouting({
     },
     "/hakkimizda": {
       en: "/about",
-      ar: "/عن-الموقع",
+      ar: "/من-نحن",
     },
     "/iletisim": {
       en: "/contact",

@@ -84,7 +84,7 @@ export default function ContactForm() {
 
         {inputFields.map(({ id, name, type }) => (
           <div key={id}>
-            <label className="mb-1 block text-sm font-medium">
+            <label className="mb-1 block text-sm font-medium text-center">
               {t(`labels.${name}`)} <span className="text-red-500">*</span>
             </label>
             <ValidatedInput
@@ -105,7 +105,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className={`btn w-full text-base-100 bg-base-content rounded-xl transition-all duration-200 ${
+          className={`btn w-full text-base-100 bg-base-content transition-all duration-200 ${
             isLoading
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-gradient-to-l to-primary-btn-hover from-third-bg hover:shadow-lg"

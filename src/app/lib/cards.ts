@@ -11,6 +11,6 @@ export const cards = [
     icon: MapPin,
     title: "address",
     description:
-      "İkitelli Organize Sanayi Bölgesi Dolapdere Sanayi Sitesi 18 Ada No:32 BAŞAKŞEHİR / İSTANBUL - TÜRKİYE",
+      "İkitelli Organize Sanayi Bölgesi Dolapdere Sanayi Sitesi 18 Ada No:32 Başakşehir / İstanbul - Türkiye",
   },
 ];

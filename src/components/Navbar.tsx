@@ -76,7 +76,7 @@ export default function Navbar() {
                 <li key={item.title}>
                   <Link
                     href={item.path}
-                    className="hover:text-primary hover:bg-base-content">
+                    className="hover:text-primary hover:bg-base-100">
                     {t(item.title)}
                   </Link>
                 </li>
