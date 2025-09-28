@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "title": "Ocak Automotive",
+    "description": "Ocak Automotive: Manufacturer of door & trunk seals, glass rubber profiles, EPDM sponge profiles, hoses, pneumatic fittings, and truck/trailer accessories."
+  },
+  "home": {
+    "title": "Home",
+    "description": "Explore our range: metal-reinforced profiles, glass seals, EPDM sponge profiles, transparent/braided hoses, complete door seal kits, PVC profiles, and fittings."
+  },
+  "aboutMeta": {
+    "title": "About Us",
+    "description": "Ocak Automotive delivers seals, gaskets, hoses and fittings with consistent quality and fast dispatch. OEM/custom production and wide stock availability."
+  },
+
+  "contactMeta": {
+    "title": "Contact",
+    "description": "Get a quote, sample, or technical support from Ocak Automotive. We provide tailored sealing, hose and fitting solutions for your application."
+  },
+  "productsMeta": {
+    "title": "Products",
+    "description": "Metal-reinforced profiles, glass rubber & felt seals, EPDM/natural sponge profiles, hoses & tubes, door seal kits, PVC profiles, and pneumatic fittings."
+  },
+
   "nav": {
     "home": "Home",
     "about": "About",

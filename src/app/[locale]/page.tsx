@@ -1,12 +1,30 @@
-"use client";
 import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { ProductMsg } from "../types/productMsg";
 import { productImagesHome } from "../lib/productImagesHome";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+import { routing } from "@/i18n/routing";
 
-export default function Home() {
-  const t = useTranslations("products");
+import { generatePageMetadata } from "@/lib/metadata";
+import ProductsSection from "@/components/ProductsSection";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const { locale } = await params;
+
+  // Use default meta namespace
+  return generatePageMetadata(locale, {
+    namespace: "home",
+  });
+}
+
+export default async function Home() {
+  const t = await getTranslations("products");
   const products = t.raw("list") as ProductMsg[];
   return (
     <div>

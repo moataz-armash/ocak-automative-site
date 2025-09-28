@@ -1,34 +1,14 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
-import Image from "next/image";
-import logo from "@/public/Images/ocak_logo.png";
-import { ChevronDown } from "lucide-react";
+
 import ThemeSwitch from "./ThemeSwitch";
 import { menuItems } from "@/app/lib/menuItems";
-import { useTheme } from "next-themes";
+import { getTranslations } from "next-intl/server";
+import LogoTheme from "./LogoTheme";
+import DesktopMenu from "./DesktopMenu";
 
-export default function Navbar() {
-  const { resolvedTheme } = useTheme();
-  const t = useTranslations("nav");
-  const [open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement>(null);
-
-  // Close when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    }
-    document.addEventListener("mouseover", handleClickOutside);
-    return () => document.removeEventListener("mouseover", handleClickOutside);
-  }, []);
+export default async function Navbar() {
+  const t = await getTranslations("nav");
 
   return (
     <div className="navbar bg-base-100 shadow-sm lg:px-16">
@@ -87,64 +67,12 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="text-xl">
-          {resolvedTheme === "light" ? (
-            <Image
-              src={logo}
-              alt="ocak automotive logo"
-              placeholder="blur"
-              width={90}
-              height={90}
-              blurDataURL="data:image/jpeg;base64,..."
-            />
-          ) : (
-            <h1>OCAK OTOMOTİV</h1>
-          )}
+          <LogoTheme />
         </Link>
       </div>
 
       {/* Center: Desktop Menu */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 z-20">
-          {menuItems.map((item) =>
-            item.productsChildren ? (
-              <li
-                key={item.title}
-                ref={dropdownRef}
-                className="relative"
-                onMouseEnter={() => setOpen(!open)}>
-                <Link href={item.path} className="hover:text-primary text-base">
-                  {" "}
-                  {t(item.title)}
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-200 ${
-                      open ? "rotate-180" : ""
-                    }`}
-                  />
-                </Link>
-                {open && (
-                  <ul className="absolute left-0 mt-8 bg-base-100 shadow-md rounded-md p-2 w-56">
-                    {item.productsChildren.map((child) => (
-                      <li key={child.title}>
-                        <Link
-                          href={child.path}
-                          className="block px-4 py-2 hover:bg-gray-100 hover:text-primary text-base">
-                          {t(`productsChildren.${child.title}`)}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ) : (
-              <li key={item.title}>
-                <Link href={item.path} className="hover:text-primary text-base">
-                  {t(item.title)}
-                </Link>
-              </li>
-            )
-          )}
-        </ul>
-      </div>
+      <DesktopMenu />
 
       {/* Right: Locale Switcher */}
       <div className="flex navbar-end gap-2">

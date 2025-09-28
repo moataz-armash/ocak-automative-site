@@ -1,10 +1,27 @@
-"use client";
 import Header from "@/components/Header";
+import { routing } from "@/i18n/routing";
+import { generatePageMetadata } from "@/lib/metadata";
 import aboutUs from "@/public/images/about-us.png";
-import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-export default function About() {
-  const t = useTranslations("about");
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const { locale } = await params;
+
+  // Use default meta namespace
+  return generatePageMetadata(locale, {
+    namespace: "aboutMeta",
+  });
+}
+
+export default async function About({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
 
   return (
     <div className="container mx-auto py-8 bg-base-100">

@@ -84,7 +84,7 @@ export default function ContactForm() {
 
         {inputFields.map(({ id, name, type }) => (
           <div key={id}>
-            <label className="mb-1 block text-sm font-medium text-center">
+            <label className="mb-1 block text-sm font-medium">
               {t(`labels.${name}`)} <span className="text-red-500">*</span>
             </label>
             <ValidatedInput
@@ -97,7 +97,7 @@ export default function ContactForm() {
               defaultValue={state.form?.[name]}
               errors={state.errors?.[name]}
               disabled={isLoading}
-              rows={type === "textarea" && 5}
+              rows={type === "textarea" && String(5)}
             />
           </div>
         ))}

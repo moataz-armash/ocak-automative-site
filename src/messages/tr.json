@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "title": "Ocak Otomotiv",
+    "description": "Ocak Otomotiv: Kapı ve bagaj fitilleri, cam lastikleri, EPDM sünger ve profiller, hortumlar, pnömatik rakorlar ve tır/dorse malzemeleri üreticisi."
+  },
+
+  "home": {
+    "title": "Ana Sayfa",
+    "description": "Ocak Otomotiv’in ürün gamını keşfedin: metal takviyeli profiller, cam lastik/fitilleri, EPDM sünger profiller, şeffaf ve örgülü hortumlar, tır ve dorse ekipmanları."
+  },
+  "aboutMeta": {
+    "title": "Hakkımızda",
+    "description": "Ocak Otomotiv; conta, fitil, hortum ve rakor çözümlerinde kalite, süreklilik ve hızlı sevkiyat sunar. OEM/özel üretim ve geniş stokla hizmet veriyoruz."
+  },
+  "contactMeta": {
+    "title": "İletişim",
+    "description": "Ocak Otomotiv ile teklif, numune veya teknik destek için iletişime geçin. İhtiyacınıza uygun conta, fitil, hortum ve rakor çözümleri sunuyoruz."
+  },
+  "productsMeta": {
+    "title": "Ürünler",
+    "description": "Metal takviyeli profiller, cam lastik ve fitil çeşitleri, EPDM/tabii kauçuk sünger profiller, hortum ve borular, kapı fitili setleri, PVC profiller ve pnömatik rakorlar."
+  },
+
   "nav": {
     "home": "Anasayfa",
     "about": "Hakkımızda",

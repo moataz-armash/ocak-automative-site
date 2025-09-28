@@ -10,11 +10,11 @@ import img1 from "@/public/images/res3_2.png";
 export default function ProductGrid({ products }: { products: ProductMsg[] }) {
   return (
     <section className="mx-auto max-w-7xl px-4 pt-18">
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {products.map((p) => (
+      <ul className="grid gap-6 grid-cols-2 lg:grid-cols-3">
+        {products.map((p, index) => (
           <li
             key={p.id}
-            className="transform transition-transform duration-500 hover:scale-105">
+            className={`transform transition-transform duration-500 hover:scale-105 ${products.length % 2 && products.length - 1 === index && " col-span-2 md:col-auto"}`}>
             <Link
               href={`/urunler/${p.id}`}
               className="group relative block overflow-hidden rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition group-hover:scale-[1.05]">

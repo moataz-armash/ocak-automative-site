@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="grid grid-flow-col gap-4">
           <div className="flex gap-4">
             {/* Facebook link */}
-            <a
+            <Link
               href="https://www.facebook.com/pages/OCAK-OTOMOT%C4%B0V/446271218779453"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
               aria-label="Facebook link">
@@ -48,10 +48,10 @@ export default function Footer() {
                 className="w-5 h-5 fill-current text-gray-800">
                 <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
               </svg>
-            </a>
+            </Link>
 
             {/* Twitter (X) link */}
-            <a
+            <Link
               href="https://x.com/OCAKOTOMOTV"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
               aria-label="X link">
@@ -61,7 +61,7 @@ export default function Footer() {
                 viewBox="0 0 50 50">
                 <path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
