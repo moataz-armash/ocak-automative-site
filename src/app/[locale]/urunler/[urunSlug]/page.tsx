@@ -1,4 +1,4 @@
-import { CATEGORY_SLUGS } from "@/app/lib/catalog";
+// import { CATEGORY_SLUGS } from "@/app/lib/catalog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
