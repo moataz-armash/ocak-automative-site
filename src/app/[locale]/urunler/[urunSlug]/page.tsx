@@ -9,8 +9,23 @@ export const dynamicParams = false;
 
 type Props = { params: Promise<{ locale: string; urunSlug: string }> };
 
+const LOCALES = ["tr", "en", "ar"] as const;
+const CATEGORY_SLUGS = [
+  "metal-profiles",
+  "glass-seals",
+  "foam-profiles",
+  "hoses",
+  "door-trunk-seals",
+  "pvc-tank-belts",
+  "truck-trailer-materials",
+  "pneumatic-fittings",
+  "other-products",
+] as const;
+
 export function generateStaticParams() {
-  return CATEGORY_SLUGS.map((slug) => ({ urunSlug: slug }));
+  return LOCALES.flatMap((locale) =>
+    CATEGORY_SLUGS.map((category) => ({ locale, category }))
+  );
 }
 
 export async function generateMetadata({
