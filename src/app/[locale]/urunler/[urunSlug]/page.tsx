@@ -24,7 +24,7 @@ const CATEGORY_SLUGS = [
 
 export function generateStaticParams() {
   return LOCALES.flatMap((locale) =>
-    CATEGORY_SLUGS.map((category) => ({ locale, category }))
+    CATEGORY_SLUGS.map((urunSlug) => ({ locale, urunSlug }))
   );
 }
 
