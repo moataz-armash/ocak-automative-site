@@ -25,7 +25,12 @@ export default function ProductCard({
       viewport={{ once: true }}
       className="card bg-base-100 w-full shadow-lg h-auto">
       <figure>
-        <Image src={img} alt={alt} className="w-full h-auto rounded-t-lg" />
+        <Image
+          src={img}
+          alt={alt}
+          className="w-full h-auto rounded-t-lg"
+          fill
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-base-content">{title}</h2>
