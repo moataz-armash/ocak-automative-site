@@ -4,11 +4,8 @@ import ProductCard from "@/components/ProductCard";
 import { ProductMsg } from "../types/productMsg";
 import { productImagesHome } from "../lib/productImagesHome";
 import { getTranslations } from "next-intl/server";
-import { Metadata } from "next";
-import { routing } from "@/i18n/routing";
 
 import { generatePageMetadata } from "@/lib/metadata";
-import ProductsSection from "@/components/ProductsSection";
 
 export async function generateMetadata({
   params,

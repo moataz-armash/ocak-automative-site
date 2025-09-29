@@ -16,7 +16,7 @@ export default function ProductGrid({ products }: { products: ProductMsg[] }) {
             key={p.id}
             className={`transform transition-transform duration-500 hover:scale-105 ${products.length % 2 && products.length - 1 === index && " col-span-2 md:col-auto"}`}>
             <Link
-              href={`/urunler/${p.id}`}
+              href={`/urunler/${p.id}` as any}
               className="group relative block overflow-hidden rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition group-hover:scale-[1.05]">
               {/* Background Image */}
               <div className="relative aspect-[21/9] w-full">

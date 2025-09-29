@@ -12,7 +12,13 @@ import imgMetal11 from "@/public/images/metal_takviyeli_profiller/76.jpg";
 import imgMetal12 from "@/public/images/metal_takviyeli_profiller/81.jpg";
 import imgMetal13 from "@/public/images/metal_takviyeli_profiller/80.jpg";
 import imgMetal14 from "@/public/images/metal_takviyeli_profiller/82.jpg";
-export type SubProduct = { id: string; title: string; image: any; alt: string };
+import { StaticImageData } from "next/image";
+export type SubProduct = {
+  id: string;
+  title: string;
+  image: StaticImageData;
+  alt: string;
+};
 export type Category = { slug: string; title: string; products: SubProduct[] };
 
 export const CATALOG: Record<string, Category> = {

@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import ProductGrid from "@/components/ProductGrid";
 import { generatePageMetadata } from "@/lib/metadata";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export type ProductMsg = {

@@ -16,5 +16,5 @@ export async function mailAction(
     };
   }
 
-  redirect("/");
+  redirect("/ as const");
 }

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
 function invalidLocale(locale: string) {
-  return !routing.locales.includes(locale as any);
+  return !routing.locales.includes(locale as "tr" | "en" | "ar");
 }
 
 /** Site-wide metadata with title template (Brand) — call this in the [locale] layout */

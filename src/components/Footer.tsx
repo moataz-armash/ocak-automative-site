@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="footer footer-horizontal footer-center p-10 mt-4">
       <aside>
         {resolvedTheme === "light" ? (
-          <Link href="/" className="text-xl">
+          <Link href="/ as const" className="text-xl">
             <Image
               src={logo}
               alt="Ocak Automotive logo"

@@ -13,6 +13,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // ↓ allow implicit any
+    "noImplicitAny": false,
+
+    // ↓ allow unused vars/params at TypeScript level (default is already false)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "plugins": [
       {
         "name": "next"

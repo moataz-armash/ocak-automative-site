@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import Link from "next/link";
+import { Route } from "next";
 
 const images = [araba, benzinMazot, kapiVeBagaj, sungerliFitiller];
 
@@ -43,7 +44,7 @@ export default function Hero() {
             <div className="flex justify-center md:justify-start">
               <Link
                 className="btn bg-primary text-primary-content rounded-xl hover:bg-error"
-                href={t("cta.href")}>
+                href={t("cta.href") as Route}>
                 {t("cta.label")}
               </Link>
             </div>

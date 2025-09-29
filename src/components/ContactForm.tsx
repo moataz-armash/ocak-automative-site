@@ -44,12 +44,12 @@ export default function ContactForm() {
     if (res.ok) {
       setMessageState("success");
       toast.success(t("messages.sent"));
-      setMsg(t("messages.sent"));
+      // setMsg(t("messages.sent"));
       form.reset();
       setWasSubmitted(false);
     } else {
       setMessageState("error");
-      setMsg(t("messages.error"));
+      // setMsg(t("messages.error"));
     }
   }
 

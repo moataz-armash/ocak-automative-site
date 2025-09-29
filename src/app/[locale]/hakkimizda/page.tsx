@@ -1,8 +1,6 @@
 import Header from "@/components/Header";
-import { routing } from "@/i18n/routing";
 import { generatePageMetadata } from "@/lib/metadata";
 import aboutUs from "@/public/images/about-us.png";
-import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -19,7 +17,11 @@ export async function generateMetadata({
   });
 }
 
-export default async function About({ params }) {
+export default async function About({
+  params,
+}: {
+  params: { locale: string };
+}) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
 

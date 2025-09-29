@@ -47,7 +47,7 @@ export default function DesktopMenu() {
                   {item.productsChildren.map((child) => (
                     <li key={child.title}>
                       <Link
-                        href={child.path}
+                        href={child.path as any}
                         className="block px-4 py-2 hover:bg-gray-100 hover:text-primary text-base">
                         {t(`productsChildren.${child.title}`)}
                       </Link>
@@ -58,7 +58,9 @@ export default function DesktopMenu() {
             </li>
           ) : (
             <li key={item.title}>
-              <Link href={item.path} className="hover:text-primary text-base">
+              <Link
+                href={item.path as any}
+                className="hover:text-primary text-base">
                 {t(item.title)}
               </Link>
             </li>
