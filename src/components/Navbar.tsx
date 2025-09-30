@@ -37,7 +37,7 @@ export default async function Navbar() {
                 <li key={item.title}>
                   <details>
                     <summary className="hover:bg-base-100 hover:text-primary">
-                      {t(item.title)}
+                      <Link href={item.path}>{t(item.title)}</Link>
                     </summary>
                     <ul className="p-2">
                       {item.productsChildren.map((child) => (
