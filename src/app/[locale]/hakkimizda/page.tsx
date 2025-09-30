@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { generatePageMetadata } from "@/lib/metadata";
-import aboutUs from "../../../public/images/about-us.png";
+import aboutUs from "@/public/images/about-us.png";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 

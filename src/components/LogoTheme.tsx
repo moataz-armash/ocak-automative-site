@@ -1,6 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
-import logo from "../public/images/ocak_logo.png";
+import logo from "@/public/images/ocak_logo.png";
 import Image from "next/image";
 export default function LogoTheme() {
   const { resolvedTheme } = useTheme();
