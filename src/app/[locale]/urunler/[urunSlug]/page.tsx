@@ -30,10 +30,9 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; urunSlug: string };
+  params: Promise<{ locale: string; urunSlug: string }>;
 }) {
   const { locale, urunSlug } = await params;
-  console.log(locale);
   const tCat = await getTranslations({ locale, namespace: "categories.list" });
   const displayName = tCat(`${urunSlug}.title`);
   const description = `${displayName} ürünlerini inceleyin: dayanıklı malzemeler, hassas üretim ve hızlı tedarik.`;
@@ -51,11 +50,23 @@ type ProductMsg = {
 };
 
 export default async function CategoryPage({ params }: Props) {
-  const t = await getTranslations("categories");
-  const { urunSlug } = await params;
-  const category = t.raw(`list.${urunSlug}.products`) as ProductMsg[];
+  const { locale, urunSlug } = await params;
 
-  if (!category) return notFound();
+  // Validate that the category slug exists
+  if (!CATEGORY_SLUGS.includes(urunSlug as any)) {
+    return notFound();
+  }
+
+  const t = await getTranslations({ locale, namespace: "categories" });
+  const category = t.raw(`list.${urunSlug}.products`) as
+    | ProductMsg[]
+    | undefined;
+
+  if (!category || !Array.isArray(category) || category.length === 0) {
+    return notFound();
+  }
+
+  const categoryTitle = t(`list.${urunSlug}.title`) as string;
 
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
@@ -65,10 +76,10 @@ export default async function CategoryPage({ params }: Props) {
           {t("heading")}
         </Link>
         <span className="mx-2 text-base-content">/</span>
-        <span className="text-error">{t(`list.${urunSlug}.title`)}</span>
+        <span className="text-error">{categoryTitle}</span>
       </nav>
 
-      <h1 className="text-3xl font-bold mb-6">{t(`list.${urunSlug}.title`)}</h1>
+      <h1 className="text-3xl font-bold mb-6">{categoryTitle}</h1>
 
       {/* Products grid */}
       <ProductsGrid category={category} urunSlug={urunSlug} />

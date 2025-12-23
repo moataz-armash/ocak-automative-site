@@ -6,7 +6,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
