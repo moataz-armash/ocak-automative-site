@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import { Link } from "@/navigation";
-import { Route } from "next";
 import { heroSliderSlides } from "@/app/lib/heroSliderImages";
 
 export default function Hero() {
@@ -39,7 +38,7 @@ export default function Hero() {
             <div className="flex justify-center md:justify-start">
               <Link
                 className="btn bg-primary text-primary-content rounded-xl hover:bg-error"
-                href={t("cta.href") as Route}>
+                href={t("cta.href") as any}>
                 {t("cta.label")}
               </Link>
             </div>
