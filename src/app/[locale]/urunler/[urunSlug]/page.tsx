@@ -12,14 +12,13 @@ type Props = { params: Promise<{ locale: string; urunSlug: string }> };
 const LOCALES = ["tr", "en", "ar"] as const;
 const CATEGORY_SLUGS = [
   "metal-profiles",
+  "metal-door-seals",
   "glass-seals",
   "foam-profiles",
+  "epdm-seals",
   "hoses",
   "door-trunk-seals",
   "pvc-tank-belts",
-  "truck-trailer-materials",
-  "pneumatic-fittings",
-  "other-products",
 ] as const;
 
 export function generateStaticParams() {

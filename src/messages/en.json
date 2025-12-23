@@ -1,7 +1,8 @@
 {
   "meta": {
-    "title": "Ocak Automotive",
-    "description": "Ocak Automotive: Manufacturer of door & trunk seals, glass rubber profiles, EPDM sponge profiles, hoses, pneumatic fittings, and truck/trailer accessories."
+    "title": "Ocak Automotive Auto Door and Glass Seals Ikitelli Istanbul",
+    "description": "Ocak automotive Auto door and glass seals, air and fuel hoses manufacturing, manufacturer Ikitelli Istanbul",
+    "keywords": "ocak automotive, auto door, glass seal, glass seals, auto door seal, door seals, ikitelli door seal, istanbul glass seal, glass rubber, door rubber, foam seals, transparent hose, fuel hose, gasoline hose, diesel hose, pneumatic fitting, trailer hose"
   },
   "home": {
     "title": "Home",
@@ -28,14 +29,13 @@
     "contact": "Contact",
     "productsChildren": {
       "metal-profiles": "Metal Reinforced Profiles",
-      "glass-seals": "Glass Rubber and Seals",
-      "foam-profiles": "Foam Profiles",
-      "hoses": "Hose Types",
-      "door-trunk-seals": "Door and Trunk Seals",
-      "pvc-tank-belts": "PVC Profiles & Tank Belts",
-      "truck-trailer-materials": "Truck & Trailer Materials",
-      "pneumatic-fittings": "Pneumatic Fittings",
-      "other-products": "Other Products"
+      "metal-door-seals": "Metal Reinforced Door Seals",
+      "glass-seals": "Glass Rubber Seals",
+      "foam-profiles": "Foam Seals",
+      "epdm-seals": "EPDM Seals",
+      "hoses": "Fuel and Air Hoses",
+      "door-trunk-seals": "Trunk Seals",
+      "pvc-tank-belts": "Tank Belt Rubbers"
     }
   },
 
@@ -119,40 +119,39 @@
         "alt": "Image of metal reinforced profiles"
       },
       {
+        "id": "metal-door-seals",
+        "title": "Metal Reinforced Door Seals",
+        "alt": "Image of metal reinforced door seals"
+      },
+      {
         "id": "glass-seals",
-        "title": "Glass Rubber and Seals",
-        "alt": "Image of glass rubber and seals"
+        "title": "Glass Rubber Seals",
+        "alt": "Image of glass rubber seals"
       },
       {
         "id": "foam-profiles",
-        "title": "Foam Profiles",
-        "alt": "Image of foam profiles"
+        "title": "Foam Seals",
+        "alt": "Image of foam seals"
       },
-      { "id": "hoses", "title": "Hose Types", "alt": "Image of hose types" },
+      {
+        "id": "epdm-seals",
+        "title": "EPDM Seals",
+        "alt": "Image of EPDM seals"
+      },
+      {
+        "id": "hoses",
+        "title": "Fuel and Air Hoses",
+        "alt": "Image of fuel and air hoses"
+      },
       {
         "id": "door-trunk-seals",
-        "title": "Door and Trunk Seals",
-        "alt": "Image of door and trunk seals"
+        "title": "Trunk Seals",
+        "alt": "Image of trunk seals"
       },
       {
         "id": "pvc-tank-belts",
-        "title": "PVC Profiles and Tank Belts",
-        "alt": "Image of PVC profiles and tank belts"
-      },
-      {
-        "id": "truck-trailer",
-        "title": "Truck and Trailer Materials",
-        "alt": "Image of truck and trailer materials"
-      },
-      {
-        "id": "pneumatic-fittings",
-        "title": "Pneumatic Fittings",
-        "alt": "Image of pneumatic fittings"
-      },
-      {
-        "id": "other",
-        "title": "Other Products",
-        "alt": "Image of other products"
+        "title": "Tank Belt Rubbers",
+        "alt": "Image of tank belt rubbers"
       }
     ]
   },
@@ -171,71 +170,11 @@
             "id": "sheet-trunk-seal",
             "title": "Sheet Trunk Seal",
             "alt": "Black rubber sheet trunk seal"
-          },
-          {
-            "id": "mercedes-lada-door-seal",
-            "title": "Mercedes-Lada Door Seal",
-            "alt": "Door seal for Mercedes and Lada vehicles"
-          },
-          {
-            "id": "solid-door-seal",
-            "title": "Solid Door Seal",
-            "alt": "Solid type black rubber door seal"
-          },
-          {
-            "id": "m23-automatic-door-seal",
-            "title": "M23 Automatic Door Seal",
-            "alt": "M23 model automatic door seal"
-          },
-          {
-            "id": "panel-door-seal-type",
-            "title": "Panel Seal Door Type",
-            "alt": "Panel type rubber door seal"
-          },
-          {
-            "id": "panel-trunk-seal-type",
-            "title": "Panel Seal Trunk Type",
-            "alt": "Panel type rubber trunk seal"
-          },
-          {
-            "id": "small-sheet-profile",
-            "title": "Small Sheet Profile",
-            "alt": "Small black sheet profile rubber"
-          },
-          {
-            "id": "wide-sheet-profile",
-            "title": "Wide Sheet Profile",
-            "alt": "Wide sheet profile rubber with textile reinforcement"
-          },
-          {
-            "id": "doblo-door-rubber",
-            "title": "Doblo Type Door Rubber",
-            "alt": "Doblo type automotive door rubber seal"
-          },
-          {
-            "id": "tractor-door-seal",
-            "title": "Tractor Door Seal",
-            "alt": "Black rubber tractor door seal"
-          },
-          {
-            "id": "sheet-profile-varieties",
-            "title": "Sheet Profile Varieties",
-            "alt": "Different types of sheet rubber profiles"
-          },
-          {
-            "id": "medium-door-seal",
-            "title": "Medium Size Door Seal",
-            "alt": "Medium-sized black rubber door seal"
-          },
-          {
-            "id": "solid-trunk-seal",
-            "title": "Solid Trunk Seal",
-            "alt": "Solid type rubber trunk seal"
           }
         ]
       },
       "glass-seals": {
-        "title": "Glass Rubber & Seal Varieties",
+        "title": "Glass Rubber Seals",
         "products": [
           {
             "id": "glass-rubber-varieties",
@@ -281,86 +220,136 @@
             "id": "velvet-glass-seal-type-1",
             "title": "Velvet Glass Seal Type 1",
             "alt": "First type velvet surface glass seal"
+          }
+        ]
+      },
+      "metal-door-seals": {
+        "title": "Metal Reinforced Door Seals",
+        "products": [
+          {
+            "id": "metal-door-seal-1",
+            "title": "Metal Reinforced Door Seal 1",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "velvet-glass-seal-type-2",
-            "title": "Velvet Glass Seal Type 2",
-            "alt": "Second type velvet glass seal profile"
+            "id": "metal-door-seal-2",
+            "title": "Metal Reinforced Door Seal 2",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "velvet-glass-edge-seal",
-            "title": "Velvet Glass Edge Seal",
-            "alt": "Velvet glass seal for edge mounting"
+            "id": "metal-door-seal-3",
+            "title": "Metal Reinforced Door Seal 3",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "epdm-u-seals",
-            "title": "EPDM U Seals",
-            "alt": "EPDM material U-type seal profiles"
+            "id": "metal-door-seal-4",
+            "title": "Metal Reinforced Door Seal 4",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "glossy-glass-seal-flange",
-            "title": "Glossy Glass Seal Flange",
-            "alt": "Glossy surface glass seal flange"
+            "id": "metal-door-seal-5",
+            "title": "Metal Reinforced Door Seal 5",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "round-flange-varieties",
-            "title": "Round Flange Varieties",
-            "alt": "Various colored round flange profiles"
+            "id": "metal-door-seal-6",
+            "title": "Metal Reinforced Door Seal 6",
+            "alt": "Metal reinforced door seal"
           },
           {
-            "id": "velvet-glass-seal-type-3",
-            "title": "Velvet Glass Seal Type 3",
-            "alt": "Third type velvet glass seal profile"
+            "id": "metal-door-seal-7",
+            "title": "Metal Reinforced Door Seal 7",
+            "alt": "Metal reinforced door seal"
+          },
+          {
+            "id": "metal-door-seal-8",
+            "title": "Metal Reinforced Door Seal 8",
+            "alt": "Metal reinforced door seal"
+          },
+          {
+            "id": "metal-door-seal-9",
+            "title": "Metal Reinforced Door Seal 9",
+            "alt": "Metal reinforced door seal"
+          },
+          {
+            "id": "metal-door-seal-10",
+            "title": "Metal Reinforced Door Seal 10",
+            "alt": "Metal reinforced door seal"
+          },
+          {
+            "id": "metal-door-seal-11",
+            "title": "Metal Reinforced Door Seal 11",
+            "alt": "Metal reinforced door seal"
+          },
+          {
+            "id": "metal-door-seal-12",
+            "title": "Metal Reinforced Door Seal 12",
+            "alt": "Metal reinforced door seal"
           }
         ]
       },
       "foam-profiles": {
-        "title": "Sponge Profiles-EPDM and Natural Rubber",
+        "title": "Foam Seals",
         "products": [
           {
             "id": "solid-rubber-sponge-1",
-            "title": "Natural Rubber Sponge",
-            "alt": "Natural rubber sponge profile"
+            "title": "Foam Seal 1",
+            "alt": "Foam seal profile"
           },
           {
             "id": "solid-rubber-sponge-2",
-            "title": "Natural Rubber Sponge",
-            "alt": "Second type natural rubber sponge profile"
+            "title": "Foam Seal 2",
+            "alt": "Foam seal profile"
           },
           {
             "id": "medium-split-seal",
-            "title": "Center Split Seal",
-            "alt": "Center split seal profile"
+            "title": "Foam Seal 3",
+            "alt": "Foam seal profile"
           },
           {
             "id": "epdm-sponge-1",
-            "title": "EPDM Sponge",
-            "alt": "EPDM sponge profile"
-          },
-          {
-            "id": "epdm-sponge-2",
-            "title": "EPDM Sponge",
-            "alt": "Second type EPDM sponge profile"
-          },
-          {
-            "id": "epdm-sponge-3",
-            "title": "EPDM Sponge",
-            "alt": "Third type EPDM sponge profile"
-          },
-          {
-            "id": "epdm-sponge-4",
-            "title": "EPDM Sponge",
-            "alt": "Fourth type EPDM sponge profile"
+            "title": "Foam Seal 4",
+            "alt": "Foam seal profile"
           },
           {
             "id": "epdm-sponge-tube-seal",
-            "title": "EPDM Sponge Tube Seals",
-            "alt": "EPDM sponge tube seal profile"
+            "title": "Foam Seal 5",
+            "alt": "Foam seal profile"
+          }
+        ]
+      },
+      "epdm-seals": {
+        "title": "EPDM Seals",
+        "products": [
+          {
+            "id": "epdm-seal-1",
+            "title": "EPDM Seal 1",
+            "alt": "EPDM seal profile"
+          },
+          {
+            "id": "epdm-seal-2",
+            "title": "EPDM Seal 2",
+            "alt": "EPDM seal profile"
+          },
+          {
+            "id": "epdm-seal-3",
+            "title": "EPDM Seal 3",
+            "alt": "EPDM seal profile"
+          },
+          {
+            "id": "epdm-seal-4",
+            "title": "EPDM Seal 4",
+            "alt": "EPDM seal profile"
+          },
+          {
+            "id": "epdm-seal-5",
+            "title": "EPDM Seal 5",
+            "alt": "EPDM seal profile"
           }
         ]
       },
       "hoses": {
-        "title": "Hoses & Tube Varieties",
+        "title": "Fuel and Air Hoses",
         "products": [
           {
             "id": "rubber-inflation-hose-1",
@@ -440,7 +429,7 @@
         ]
       },
       "door-trunk-seals": {
-        "title": "Complete Door Seal Kits",
+        "title": "Trunk Seals",
         "products": [
           {
             "id": "megan-door-seal-kit",
@@ -505,7 +494,7 @@
         ]
       },
       "pvc-tank-belts": {
-        "title": "PVC Profiles & Tank Belt Rubbers",
+        "title": "Tank Belt Rubbers",
         "products": [
           {
             "id": "tank-belt-seal",
@@ -526,221 +515,6 @@
             "id": "special-mudguard-seal",
             "title": "Special Mudguard Seal",
             "alt": "Special mudguard seal profile"
-          },
-          {
-            "id": "special-pvc-profiles",
-            "title": "Special PVC Profiles",
-            "alt": "Special PVC profile varieties"
-          },
-          {
-            "id": "triangular-glass-seal-flange",
-            "title": "Triangular Glass Seal Flange",
-            "alt": "Triangular glass seal flange profile"
-          },
-          {
-            "id": "round-flange-varieties",
-            "title": "Round Flange Varieties",
-            "alt": "Round flange varieties"
-          },
-          {
-            "id": "oval-transparent-hose",
-            "title": "Oval Transparent Hose",
-            "alt": "Oval transparent hose profile"
-          },
-          {
-            "id": "butterfly-seal",
-            "title": "Butterfly Seal",
-            "alt": "Butterfly seal profile"
-          },
-          {
-            "id": "fire-door-seal",
-            "title": "Fire Door Seal",
-            "alt": "Fire door seal profile"
-          },
-          {
-            "id": "joinery-interior-door-seal",
-            "title": "Joinery & Interior Door Seal",
-            "alt": "Joinery and interior door seal profile"
-          }
-        ]
-      },
-      "truck-trailer-materials": {
-        "title": "Truck & Trailer Materials",
-        "products": [
-          {
-            "id": "truck-trailer-hose",
-            "title": "Truck Trailer Hose",
-            "alt": "Truck trailer hose system"
-          },
-          {
-            "id": "cabin-cleaning-hose",
-            "title": "Cabin Cleaning Hose",
-            "alt": "Cabin cleaning hose"
-          },
-          {
-            "id": "mudguard-back-rubber",
-            "title": "Mudguard Tension Rubber",
-            "alt": "Mudguard tension rubber system"
-          },
-          {
-            "id": "truck-back-rubber",
-            "title": "Truck Tension Rubber",
-            "alt": "Truck tension rubber system"
-          },
-          {
-            "id": "trailer-support-bracket",
-            "title": "Trailer Support Bracket",
-            "alt": "Trailer support bracket"
-          },
-          {
-            "id": "metal-tank-cap",
-            "title": "Metal Tank Cap",
-            "alt": "Metal tank cap"
-          },
-          {
-            "id": "customs-seal",
-            "title": "Customs Seal",
-            "alt": "Customs seal system"
-          },
-          {
-            "id": "led-marker-lamp",
-            "title": "LED Marker Lamp",
-            "alt": "LED marker lamp"
-          },
-          {
-            "id": "plastic-tank-cap",
-            "title": "Plastic Tank Cap",
-            "alt": "Plastic tank cap"
-          },
-          {
-            "id": "blue-led-marker-lamp",
-            "title": "Six LED Marker Lamp",
-            "alt": "Six LED blue marker lamp"
-          },
-          {
-            "id": "led-strip-light",
-            "title": "LED Strip Light",
-            "alt": "Meter LED strip light"
-          },
-          {
-            "id": "led-emblems",
-            "title": "LED Emblem Varieties",
-            "alt": "LED emblem varieties"
-          },
-          {
-            "id": "trailer-support-bracket-set",
-            "title": "Trailer Support Bracket",
-            "alt": "Trailer support bracket set"
-          },
-          {
-            "id": "tire-rubber",
-            "title": "Battery Rubber",
-            "alt": "Battery rubber system"
-          },
-          {
-            "id": "trailer-middle-cover-seal",
-            "title": "Trailer Middle Cover Seal",
-            "alt": "Trailer middle cover seal system"
-          }
-        ]
-      },
-      "pneumatic-fittings": {
-        "title": "Pneumatic Fittings & Other Fitting Types",
-        "products": [
-          {
-            "id": "pneumatic-straight-fittings",
-            "title": "Pneumatic Straight Fittings",
-            "alt": "Pneumatic straight fitting connectors"
-          },
-          {
-            "id": "pneumatic-l-fittings",
-            "title": "Pneumatic L Fittings",
-            "alt": "Pneumatic L-type fitting connectors"
-          },
-          {
-            "id": "pneumatic-iron-fittings",
-            "title": "Pneumatic Iron Fittings",
-            "alt": "Pneumatic iron fitting connectors"
-          },
-          {
-            "id": "pneumatic-t-fittings",
-            "title": "Pneumatic T Fittings",
-            "alt": "Pneumatic T-type fitting connectors"
-          },
-          {
-            "id": "metric-series-pneumatic-fittings",
-            "title": "Metric Series Pneumatic Fittings",
-            "alt": "Metric series pneumatic fitting connectors"
-          },
-          {
-            "id": "pneumatic-elbow-fittings",
-            "title": "Pneumatic Elbow Fittings",
-            "alt": "Pneumatic elbow fitting connectors"
-          },
-          {
-            "id": "pneumatic-iron-elbow-fittings",
-            "title": "Pneumatic Iron Elbow Fittings",
-            "alt": "Pneumatic iron elbow fitting connectors"
-          },
-          {
-            "id": "pneumatic-iron-t-fittings",
-            "title": "Pneumatic Iron T Fittings",
-            "alt": "Pneumatic iron T fitting connectors"
-          },
-          {
-            "id": "iron-fitting-varieties",
-            "title": "Iron Fitting Varieties",
-            "alt": "Iron fitting connector varieties"
-          },
-          {
-            "id": "butterfly-and-pin-fittings",
-            "title": "Butterfly & Pin Fittings",
-            "alt": "Butterfly and pin fitting accessories"
-          },
-          {
-            "id": "metal-t-fittings",
-            "title": "Metal T Fittings",
-            "alt": "Metal T fitting connectors"
-          },
-          {
-            "id": "italian-type-chuck",
-            "title": "Italian Type Chuck",
-            "alt": "Italian type chuck fitting"
-          },
-          {
-            "id": "yellow-air-pump-chuck",
-            "title": "Yellow Air Pump Chuck",
-            "alt": "Yellow air pump chuck fitting"
-          }
-        ]
-      },
-      "other-products": {
-        "title": "Our Other Products",
-        "products": [
-          {
-            "id": "hose-clamp-varieties",
-            "title": "Hose Clamp Varieties",
-            "alt": "Hose clamp varieties"
-          },
-          {
-            "id": "plastic-clamp-varieties",
-            "title": "Plastic Clamp Varieties",
-            "alt": "Plastic clamp varieties"
-          },
-          {
-            "id": "adhesive-varieties",
-            "title": "Adhesive Varieties",
-            "alt": "Adhesive product varieties"
-          },
-          {
-            "id": "rubber-license-plate-varieties",
-            "title": "Rubber License Plate Varieties",
-            "alt": "Rubber license plate product varieties"
-          },
-          {
-            "id": "cabin-lifting-hoses",
-            "title": "Cabin Lifting Hoses",
-            "alt": "Cabin lifting hose systems"
           }
         ]
       }

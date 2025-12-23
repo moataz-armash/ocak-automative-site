@@ -3,10 +3,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/motion";
 import Image from "next/image";
-import araba from "@/public/images/calisma.jpg";
-import benzinMazot from "@/public/images/ocak_otomotiv_benzin_mazot_hortumu.jpg";
-import kapiVeBagaj from "@/public/images/ocak_otomotiv_kapi_ve_bagaj_fitili.jpg";
-import sungerliFitiller from "@/public/images/ocak_otomotiv_sungerli_fitiller.jpg";
 import { useTranslations } from "use-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -16,8 +12,7 @@ import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import Link from "next/link";
 import { Route } from "next";
-
-const images = [araba, benzinMazot, kapiVeBagaj, sungerliFitiller];
+import { heroSliderSlides } from "@/app/lib/heroSliderImages";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -62,22 +57,28 @@ export default function Hero() {
                 navigation
                 speed={600}
                 modules={[Autoplay, Navigation, Pagination, EffectFade]}
-                className="mySwiper rounded-lg shadow-lg w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]" /* <-- real height */
-              >
-                {images.map((img, index) => (
-                  <SwiperSlide key={index}>
-                    {/* The slide fills the given height; image fills the slide */}
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={img}
-                        alt={`Slide ${index + 1}`}
-                        fill
-                        className="object-cover rounded-lg" /* cover = full width & height */
-                        sizes="(min-width: 1024px) 50vw, 100vw" /* matches 2-col (right side) */
-                        priority={index === 0}
-                        fetchPriority={index === 0 ? "high" : "auto"}
-                        placeholder="blur"
-                      />
+                className="mySwiper rounded-lg shadow-lg w-full h-[50vh] sm:h-[60vh] lg:h-[70vh]">
+                {heroSliderSlides.map((slideImages, slideIndex) => (
+                  <SwiperSlide key={slideIndex}>
+                    {/* Grid of 4 images (2x2) */}
+                    <div className="grid grid-cols-2 grid-rows-2 gap-2 w-full h-full rounded-lg overflow-hidden">
+                      {slideImages.map((img, imgIndex) => (
+                        <div key={imgIndex} className="relative w-full h-full">
+                          <Image
+                            src={img}
+                            alt={`Slide ${slideIndex + 1} - Image ${imgIndex + 1}`}
+                            fill
+                            className="object-cover"
+                            sizes="(min-width: 1024px) 25vw, 50vw"
+                            priority={slideIndex === 0 && imgIndex === 0}
+                            fetchPriority={
+                              slideIndex === 0 && imgIndex === 0
+                                ? "high"
+                                : "auto"
+                            }
+                          />
+                        </div>
+                      ))}
                     </div>
                   </SwiperSlide>
                 ))}

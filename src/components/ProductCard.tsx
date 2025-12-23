@@ -24,8 +24,14 @@ export default function ProductCard({
       whileInView="show"
       viewport={{ once: true }}
       className="card bg-base-100 w-full shadow-lg h-auto">
-      <figure>
-        <Image src={img} alt={alt} className="w-full h-auto rounded-t-lg" />
+      <figure className="relative w-full aspect-[4/3] overflow-hidden rounded-t-lg">
+        <Image
+          src={img}
+          alt={alt}
+          fill
+          className="object-cover"
+          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 100vw"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-base-content">{title}</h2>

@@ -18,6 +18,8 @@ export async function generateLayoutMetadata(
     const baseTitle = tMeta("title");
     const baseDesc = await safeGet(tMeta, "description");
 
+    const keywords = await safeGet(tMeta, "keywords");
+
     return {
       // The template lives here (applies to all child pages)
       title: {
@@ -25,18 +27,22 @@ export async function generateLayoutMetadata(
         template: `%s | ${baseTitle}`, // used when a page sets a title string
       },
       description: baseDesc,
+      keywords: keywords
+        ? keywords.split(",").map((k: string) => k.trim())
+        : undefined,
       openGraph: {
         title: baseTitle,
         description: baseDesc,
         images: ["/og.png"],
         locale,
         type: "website",
+        siteName: baseTitle,
       },
       alternates: {
         languages: {
-          tr: "https://ocakotomative.tr/",
-          en: "https://ocakotomative.tr/en",
-          ar: "https://ocakotomative.tr/ar",
+          tr: "https://www.ocakotomotiv.com.tr/",
+          en: "https://www.ocakotomotiv.com.tr/en",
+          ar: "https://www.ocakotomotiv.com.tr/ar",
         },
       },
       robots: { index: true, follow: true },
@@ -79,23 +85,34 @@ export async function generatePageMetadata(
 
     // HOME: force plain brand on <title> (no template)
     if (namespace === "home") {
+      const keywords = await safeGet(tMeta, "keywords");
+
       return {
         title: { absolute: brand }, // bypasses "%s | Brand"
         description: pageDesc,
+        keywords: keywords
+          ? keywords.split(",").map((k: string) => k.trim())
+          : undefined,
         openGraph: {
           title: brand,
           description: pageDesc,
           images: ["/og.png"],
           locale,
           type: "website",
+          siteName: brand,
         },
       };
     }
 
     // OTHERS: return the page title as a string; layout template makes "Page | Brand"
+    const keywords = await safeGet(tMeta, "keywords");
+
     return {
       title: pageTitle,
       description: pageDesc,
+      keywords: keywords
+        ? keywords.split(",").map((k: string) => k.trim())
+        : undefined,
       openGraph: {
         // OG doesn't use the layout template — set full string yourself:
         title: `${pageTitle} | ${brand}`,
@@ -103,6 +120,7 @@ export async function generatePageMetadata(
         images: ["/og.png"],
         locale,
         type: "website",
+        siteName: brand,
       },
     };
   } catch (e) {
@@ -124,16 +142,24 @@ async function safeGet(
 
 function fallbackMeta(locale: string): Metadata {
   const fallbackTitles = {
-    tr: "Ocak Otomotiv - Otomotiv Parçaları",
-    en: "Ocak Automotive - Automotive Parts",
-    ar: "أوجاك للسيارات - قطع السيارات",
+    tr: "Ocak Otomotiv Oto Kapı ve Cam fitilleri ikitelli istanbul",
+    en: "Ocak Automotive Auto Door and Glass Seals Ikitelli Istanbul",
+    ar: "أوجاك للسيارات جوانات الأبواب والزجاج إيكيتيلي إسطنبول",
+  } as const;
+
+  const fallbackDescriptions = {
+    tr: "Ocak otomotiv Oto kapı ve cam fitilleri, hava ve yakıt hortumları üretimi, üreticisi ikitelli istanbul",
+    en: "Ocak automotive Auto door and glass seals, air and fuel hoses manufacturing, manufacturer Ikitelli Istanbul",
+    ar: "أوجاك للسيارات جوانات الأبواب والزجاج، تصنيع خراطيم الهواء والوقود، مصنع إيكيتيلي إسطنبول",
   } as const;
 
   return {
     title:
       fallbackTitles[locale as keyof typeof fallbackTitles] ||
       "Ocak Automotive",
-    description: "Automotive parts and seals manufacturer",
+    description:
+      fallbackDescriptions[locale as keyof typeof fallbackDescriptions] ||
+      "Automotive parts and seals manufacturer",
     openGraph: { images: ["/og.png"] },
   };
 }

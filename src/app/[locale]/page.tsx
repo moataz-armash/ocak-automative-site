@@ -23,6 +23,16 @@ export async function generateMetadata({
 export default async function Home() {
   const t = await getTranslations("products");
   const products = t.raw("list") as ProductMsg[];
+
+  // Swap first and third items (title/description)
+  const reorderedProducts = [...products.slice(0, 4)];
+  if (reorderedProducts.length >= 3) {
+    [reorderedProducts[0], reorderedProducts[2]] = [
+      reorderedProducts[2],
+      reorderedProducts[0],
+    ];
+  }
+
   return (
     <div>
       <Hero />
@@ -31,7 +41,7 @@ export default async function Home() {
           {t("ourProducts")}
         </h1>
         <section className="grid p-4 md:grid-cols-4 gap-6 px-6 lg:px-16">
-          {products.slice(0, 4).map((p) => (
+          {reorderedProducts.map((p) => (
             <ProductCard
               key={p.id}
               title={p.title}
