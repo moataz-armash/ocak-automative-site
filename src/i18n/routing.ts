@@ -48,25 +48,20 @@ export const routing = defineRouting({
       ar: "/منتجات/جوانات-الأبواب-والشنطة",
       tr: "/urunler/kapi-ve-bagaj-fitilleri",
     },
+    "/urunler/metal-door-seals": {
+      en: "/products/metal-door-seals",
+      ar: "/منتجات/جوانات-الأبواب-المدعمة-بالمعدن",
+      tr: "/urunler/metal-takviyeli-kapi-fitilleri",
+    },
+    "/urunler/epdm-seals": {
+      en: "/products/epdm-seals",
+      ar: "/منتجات/جوانات-EPDM",
+      tr: "/urunler/epdm-fitilleri",
+    },
     "/urunler/pvc-tank-belts": {
       en: "/products/pvc-tank-belts",
       ar: "/منتجات/أحزمة-الخزان-و-PVC",
       tr: "/urunler/pvc-profiller-ve-depo-kusak-lastikleri",
-    },
-    "/urunler/truck-trailer-materials": {
-      en: "/products/truck-trailer-materials",
-      ar: "/منتجات/مواد-الشاحنات-والمقطورات",
-      tr: "/urunler/tir-ve-dorse-malzemeleri",
-    },
-    "/urunler/pneumatic-fittings": {
-      en: "/products/pneumatic-fittings",
-      ar: "/منتجات/وصلات-نيوماتيكية",
-      tr: "/urunler/pnomatik-rakorlar",
-    },
-    "/urunler/other-products": {
-      en: "/products/other-products",
-      ar: "/منتجات/أخرى",
-      tr: "/urunler/diger-urunler",
     },
   },
 });
