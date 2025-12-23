@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { Route } from "next";
 import { heroSliderSlides } from "@/app/lib/heroSliderImages";
 

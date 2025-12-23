@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as LocaleLink } from "@/navigation";
 import logo from "@/public/images/ocak_logo.png";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
@@ -13,7 +14,7 @@ export default function Footer() {
     <footer className="footer footer-horizontal footer-center p-10 mt-4">
       <aside>
         {resolvedTheme === "light" ? (
-          <Link href="/ as const" className="text-xl">
+          <LocaleLink href="/" className="text-xl">
             <Image
               src={logo}
               alt="Ocak Automotive logo"
@@ -22,7 +23,7 @@ export default function Footer() {
               height={90}
               blurDataURL="data:image/jpeg;base64,..."
             />
-          </Link>
+          </LocaleLink>
         ) : (
           <h1 className="text-xl text-base-content bg-error-content px-4 py-1 rounded-2xl">
             OCAK OTOMOTİV

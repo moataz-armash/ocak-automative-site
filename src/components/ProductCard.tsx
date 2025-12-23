@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/motion";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 export default function ProductCard({
   title,

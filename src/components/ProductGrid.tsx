@@ -3,7 +3,7 @@
 import { ProductMsg } from "@/app/[locale]/urunler/page";
 import { ProductImages } from "@/app/lib/productsImages";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 import img1 from "@/public/images/res3_2.png";
 

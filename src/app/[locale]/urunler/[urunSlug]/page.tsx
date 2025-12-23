@@ -1,6 +1,6 @@
 // import { CATEGORY_SLUGS } from "@/app/lib/catalog";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { getTranslations } from "next-intl/server";
 import { generatePageMetadata } from "@/lib/metadata";
 import ProductsGrid from "@/components/ProductsGrid";
