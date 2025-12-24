@@ -90,7 +90,7 @@ export default function ContactForm() {
             <ValidatedInput
               type={name}
               name={name}
-              className={`${type} ${type}-bordered w-full`}
+              className={`${type} ${type}-bordered w-full p-2`}
               placeholder={t(`placeholders.${name}`)}
               wasSubmitted={wasSubmitted}
               fieldSchema={mailSchema.shape[name]}

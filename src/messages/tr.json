@@ -548,6 +548,20 @@
     "messages": {
       "sent": "Mesajınız gönderildi. Teşekkürler!",
       "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "validation": {
+      "name": {
+        "min": "En az 4 karakter olmalıdır"
+      },
+      "email": {
+        "invalid": "Lütfen geçerli bir e-posta adresi girin"
+      },
+      "phone": {
+        "invalid": "Lütfen geçerli bir telefon numarası girin"
+      },
+      "message": {
+        "min": "Lütfen daha fazla detay ekleyin"
+      }
     }
   }
 }

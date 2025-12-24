@@ -547,6 +547,20 @@
     "messages": {
       "sent": "Your message has been sent. Thanks!",
       "error": "Something went wrong. Please try again."
+    },
+    "validation": {
+      "name": {
+        "min": "At least must be 4 characters"
+      },
+      "email": {
+        "invalid": "Please enter a valid email"
+      },
+      "phone": {
+        "invalid": "Please enter a valid phone number"
+      },
+      "message": {
+        "min": "Please add more details"
+      }
     }
   }
 }
