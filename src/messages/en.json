@@ -164,8 +164,8 @@
         "products": [
           {
             "id": "sheet-pass-door-seal",
-            "title": "Sheet Pass Door Seal",
-            "alt": "Close-up of a sheet pass door seal"
+            "title": "Sheet Metal Profile Varieties",
+            "alt": "Sheet metal profile varieties"
           },
           {
             "id": "sheet-trunk-seal",
@@ -184,28 +184,28 @@
           },
           {
             "id": "velvet-glass-seals",
-            "title": "Velvet Glass Seals",
-            "alt": "Velvet-textured glass seal varieties"
+            "title": "Glass Rubber Varieties",
+            "alt": "Glass rubber varieties"
           },
           {
             "id": "triangular-glass-seal-flange",
-            "title": "Triangular Glass Seal Flange",
-            "alt": "Triangular-shaped glass seal flange profile"
+            "title": "N-Capsule Varieties",
+            "alt": "N-capsule varieties"
           },
           {
             "id": "nickel-free-u-glass-seal",
-            "title": "Nickel-Free U Glass Seal",
-            "alt": "Nickel-free U-type glass seal profile"
+            "title": "Flock Seal Varieties",
+            "alt": "Flock seal varieties"
           },
           {
             "id": "quad-channel-glass-rubber",
-            "title": "Quad Channel Glass Rubber",
-            "alt": "Four-channel glass rubber profile"
+            "title": "Flock Seal Varieties",
+            "alt": "Flock seal varieties"
           },
           {
             "id": "black-glass-seal",
-            "title": "Black Glass Seal",
-            "alt": "Black colored glass seal profile"
+            "title": "Adhesive Glass Rubbers",
+            "alt": "Adhesive glass rubbers"
           },
           {
             "id": "flanged-fixed-glass-rubber",
@@ -214,13 +214,13 @@
           },
           {
             "id": "adhesive-glass-rubber",
-            "title": "Adhesive Glass Rubber",
-            "alt": "Adhesive-featured glass rubber profile"
+            "title": "Glass Rubber",
+            "alt": "Glass rubber"
           },
           {
             "id": "velvet-glass-seal-type-1",
-            "title": "Velvet Glass Seal Type 1",
-            "alt": "First type velvet surface glass seal"
+            "title": "Glass Rubber",
+            "alt": "Glass rubber"
           }
         ]
       },
@@ -354,63 +354,63 @@
         "products": [
           {
             "id": "rubber-inflation-hose-1",
-            "title": "Tire Inflation Hose",
-            "alt": "Braided tire inflation hose"
+            "title": "Hot Water Hose",
+            "alt": "Hot water hose"
           },
           {
             "id": "rubber-inflation-hose-2",
-            "title": "Tire Inflation Hose",
-            "alt": "Black tire inflation hose"
+            "title": "E-Type Fuel Hoses",
+            "alt": "E-type fuel hoses"
           },
           {
             "id": "rubber-inflation-hose-3",
-            "title": "Tire Inflation Hose",
-            "alt": "White braided tire inflation hose"
+            "title": "Transparent Hose Varieties",
+            "alt": "Transparent hose varieties"
           },
           {
             "id": "b-type-similar-hose",
-            "title": "B-Type Fuel Hose",
-            "alt": "B-type gasoline hose"
+            "title": "Transparent Hose Varieties",
+            "alt": "Transparent hose varieties"
           },
           {
             "id": "e-type-fuel-hose",
-            "title": "E-Type Fuel Hose",
-            "alt": "E-type fuel hose"
+            "title": "Air and Oxygen Hose",
+            "alt": "Air and oxygen hose"
           },
           {
             "id": "air-oxygen-hose",
-            "title": "Air & Oxygen Hose",
-            "alt": "Colored air and oxygen hose"
+            "title": "Tire Inflation Hose",
+            "alt": "Tire inflation hose"
           },
           {
             "id": "thin-transparent-hoses",
-            "title": "Thin Transparent Hoses",
-            "alt": "Thin transparent plastic hoses"
+            "title": "Tire Inflation Hose",
+            "alt": "Tire inflation hose"
           },
           {
             "id": "oval-transparent-hose",
-            "title": "Oval Transparent Hose",
-            "alt": "Oval cross-section transparent hose"
+            "title": "B-Type Fuel Hoses",
+            "alt": "B-type fuel hoses"
           },
           {
             "id": "reinforced-transparent-hoses",
-            "title": "Heavy-Duty Transparent Hoses",
-            "alt": "Thick transparent hoses"
+            "title": "Air Pump Clamp",
+            "alt": "Air pump clamp"
           },
           {
             "id": "polyurethane-hose",
-            "title": "Polyurethane Hose",
-            "alt": "Blue polyurethane hose"
+            "title": "3.2mm E-Type Hose",
+            "alt": "3.2mm E-type hose"
           },
           {
             "id": "braided-transparent-hoses",
-            "title": "Braided Transparent Hoses",
-            "alt": "Braided transparent hoses"
+            "title": "E-Type Hose",
+            "alt": "E-type hose"
           },
           {
             "id": "3-2mm-e-type-hose",
-            "title": "3.2mm E-Type Hose",
-            "alt": "3.2mm diameter E-type green hose"
+            "title": "Transparent Hose",
+            "alt": "Transparent hose"
           },
           {
             "id": "air-hose-pvc",
@@ -434,63 +434,63 @@
         "products": [
           {
             "id": "megan-door-seal-kit",
-            "title": "Megan Type Complete Door Seal Kit",
-            "alt": "Megan type complete door seal set"
+            "title": "Trunk Seal 1",
+            "alt": "Trunk seal 1"
           },
           {
             "id": "opel-corsa-door-seal-kit",
-            "title": "Opel Corsa Type Complete Door Seal Kit",
-            "alt": "Opel Corsa type complete door seal set"
+            "title": "Trunk Seal 2",
+            "alt": "Trunk seal 2"
           },
           {
             "id": "dacia-door-seal-kit",
-            "title": "Dacia Type Complete Door Seal Kit",
-            "alt": "Dacia type complete door seal set"
+            "title": "Trunk Seal 3",
+            "alt": "Trunk seal 3"
           },
           {
             "id": "laguna-door-seal-kit",
-            "title": "Laguna Type Complete Door Seal Kit",
-            "alt": "Laguna type complete door seal set"
+            "title": "Trunk Seal 4",
+            "alt": "Trunk seal 4"
           },
           {
             "id": "fiat-linea-door-seal-kit",
-            "title": "Fiat Linea Type Complete Door Seal Kit",
-            "alt": "Fiat Linea type complete door seal set"
+            "title": "Trunk Seal 5",
+            "alt": "Trunk seal 5"
           },
           {
             "id": "fiat-albea-door-seal-kit",
-            "title": "Fiat Albea Type Complete Door Seal Kit",
-            "alt": "Fiat Albea type complete door seal set"
+            "title": "Trunk Seal 6",
+            "alt": "Trunk seal 6"
           },
           {
             "id": "opel-vectra-door-seal-kit",
-            "title": "Opel Vectra Type Complete Door Seal Kit",
-            "alt": "Opel Vectra type complete door seal set"
+            "title": "Trunk Seal 7",
+            "alt": "Trunk seal 7"
           },
           {
             "id": "volkswagen-caddy-door-seal-kit",
-            "title": "Volkswagen Caddy Type Complete Door Seal Kit",
-            "alt": "Volkswagen Caddy type complete door seal set"
+            "title": "Trunk Seal 8",
+            "alt": "Trunk seal 8"
           },
           {
             "id": "ford-connect-door-seal-kit",
-            "title": "Ford Connect Type Complete Door Seal Kit",
-            "alt": "Ford Connect type complete door seal set"
+            "title": "Trunk Seal 9",
+            "alt": "Trunk seal 9"
           },
           {
             "id": "renault-kangoo-door-seal-kit",
-            "title": "Renault Kangoo Type Complete Door Seal Kit",
-            "alt": "Renault Kangoo type complete door seal set"
+            "title": "Trunk Seal 10",
+            "alt": "Trunk seal 10"
           },
           {
             "id": "ford-transit-door-seal-kit",
-            "title": "Ford Transit Type Complete Door Seal Kit",
-            "alt": "Ford Transit type complete door seal set"
+            "title": "Trunk Seal 11",
+            "alt": "Trunk seal 11"
           },
           {
             "id": "ford-cargo-door-seal-kit",
-            "title": "Ford Cargo Type Complete Door Seal Kit",
-            "alt": "Ford Cargo type complete door seal set"
+            "title": "Trunk Seal 12",
+            "alt": "Trunk seal 12"
           }
         ]
       },
@@ -499,23 +499,23 @@
         "products": [
           {
             "id": "tank-belt-seal",
-            "title": "Tank Belt Seal",
-            "alt": "Tank belt seal profile"
+            "title": "Tank Belt Rubber",
+            "alt": "Tank belt rubber"
           },
           {
             "id": "ym-mudguard-seal",
-            "title": "Y.M. Mudguard Seal",
-            "alt": "Y.M. mudguard seal profile"
+            "title": "Tank Belt Rubber",
+            "alt": "Tank belt rubber"
           },
           {
             "id": "mudguard-seal",
-            "title": "Mudguard Seal",
-            "alt": "Mudguard seal profile"
+            "title": "Tank Belt Rubber",
+            "alt": "Tank belt rubber"
           },
           {
             "id": "special-mudguard-seal",
-            "title": "Special Mudguard Seal",
-            "alt": "Special mudguard seal profile"
+            "title": "Tank Belt Rubber",
+            "alt": "Tank belt rubber"
           }
         ]
       }
