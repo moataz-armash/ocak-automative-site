@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from "nodemailer";
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
+});
 
 export async function POST(req: Request) {
   try {
@@ -13,9 +20,9 @@ export async function POST(req: Request) {
 
     if (bot) return NextResponse.json({ ok: true });
 
-    await resend.emails.send({
-      from: process.env.CONTACT_FROM!,
-      to: process.env.CONTACT_TO!,
+    await transporter.sendMail({
+      from: `"${name}" <${process.env.GMAIL_USER}>`,
+      to: process.env.CONTACT_TO,
       subject: `Yeni İletişim Formu: ${name}`,
       replyTo: email,
       text: `Ad: ${name}\nE-posta: ${email}\nTelefon: ${phone}\n\nMesaj:\n${message}`,
